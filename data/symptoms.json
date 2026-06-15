@@ -1,12 +1,12 @@
 [
   {
     "icd10": "K04.0",
-    "tani": "Pulpitis (Diş İliği İltihabı)",
+    "tani": "Pulpitis ",
     "semptomlar": ["spontan ağrı", "gece ağrısı", "soğuğa hassasiyet", "sıcağa hassasiyet", "zonklama", "şiddetli ağrı", "pulpit"]
   },
   {
     "icd10": "K04.1",
-    "tani": "Pulpa Nekrozu (Diş İliği Ölümü)",
+    "tani": "Pulpa Nekrozu ",
     "semptomlar": ["renk değişikliği", "ağrısız diş", "kararma", "önceden ağrı vardı şimdi geçti", "nekroz"]
   },
   {
@@ -16,12 +16,12 @@
   },
   {
     "icd10": "K04.6",
-    "tani": "Periapical Apse (Diş Kökü Apsesi)",
+    "tani": "Periapikal Apse ",
     "semptomlar": ["apse", "şişlik", "irin", "ateş", "yüzde şişme", "kökü ucunda apse", "periapical apse"]
   },
   {
     "icd10": "K04.7",
-    "tani": "Periapical Kist",
+    "tani": "Periapikal Kist",
     "semptomlar": ["kist", "ağrısız şişlik", "röntgende karartı", "periapical kist"]
   },
   {
