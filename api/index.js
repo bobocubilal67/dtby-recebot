@@ -23,7 +23,7 @@ module.exports = (req, res) => {
 
   if (p === '/api' || p === '/api/' || p === '/') {
     return res.status(200).json({
-      mesaj: '🦷 ADSM Diş Hekimliği API - Aktif',
+      mesaj: '🦷  Diş Hekimliği API - Aktif',
       versiyon: '1.0.0',
       gelistirici: 'Dt. Bilal Yıldırım',
       iletisim: '@DtBilalYildirim',
