@@ -4,24 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diş Hekimliği Asistanı — Dt. Bilal Yıldırım</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:        #F0F4F8;
-      --surface:   #FFFFFF;
-      --border:    #DDE3EA;
-      --blue:      #1A56DB;
-      --blue-lt:   #EBF0FF;
-      --red:       #C81E1E;
-      --red-lt:    #FEF2F2;
-      --green:     #057A55;
-      --green-lt:  #ECFDF5;
-      --text:      #111827;
-      --muted:     #6B7280;
-      --mono:      'DM Mono', monospace;
-      --sans:      'DM Sans', sans-serif;
+      --bg:       #F0F4F8;
+      --surface:  #FFFFFF;
+      --border:   #DDE3EA;
+      --blue:     #1A56DB;
+      --blue-lt:  #EBF0FF;
+      --blue-dk:  #1245B5;
+      --red:      #C81E1E;
+      --red-lt:   #FEF2F2;
+      --orange:   #92400E;
+      --orange-lt:#FFFBEB;
+      --green:    #057A55;
+      --green-lt: #ECFDF5;
+      --text:     #111827;
+      --muted:    #6B7280;
+      --mono:     'DM Mono', monospace;
+      --sans:     'DM Sans', sans-serif;
     }
 
     body {
@@ -29,58 +32,44 @@
       background: var(--bg);
       color: var(--text);
       min-height: 100vh;
-      padding: 0 0 64px;
+      padding: 0 0 80px;
     }
 
-    /* ── Header ── */
     header {
       background: var(--blue);
       color: #fff;
-      padding: 20px 20px 18px;
+      padding: 18px 20px 16px;
     }
-    header h1 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      letter-spacing: -0.01em;
-    }
-    header p {
-      font-size: 0.78rem;
-      opacity: 0.75;
-      margin-top: 2px;
-    }
+    header h1 { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.01em; }
+    header p { font-size: 0.75rem; opacity: 0.7; margin-top: 3px; }
 
-    /* ── Main ── */
-    main { max-width: 600px; margin: 0 auto; padding: 20px 16px 0; }
+    main { max-width: 600px; margin: 0 auto; padding: 18px 16px 0; }
 
-    /* ── Card ── */
     .card {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 16px;
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 14px;
     }
     .card-title {
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--muted);
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
 
-    /* ── Search ── */
-    .search-row {
-      display: flex;
-      gap: 8px;
-    }
+    /* Arama */
+    .search-row { display: flex; gap: 8px; }
     input[type="text"] {
       flex: 1;
       font-family: var(--sans);
       font-size: 0.95rem;
-      padding: 10px 14px;
+      padding: 11px 14px;
       border: 1.5px solid var(--border);
-      border-radius: 8px;
+      border-radius: 9px;
       outline: none;
       background: var(--bg);
       color: var(--text);
@@ -93,152 +82,226 @@
       font-family: var(--sans);
       font-size: 0.9rem;
       font-weight: 600;
-      padding: 10px 18px;
+      padding: 11px 20px;
       background: var(--blue);
       color: #fff;
       border: none;
-      border-radius: 8px;
+      border-radius: 9px;
       cursor: pointer;
-      transition: opacity 0.15s;
+      transition: background 0.15s;
       white-space: nowrap;
     }
-    button.search-btn:active { opacity: 0.85; }
+    button.search-btn:active { background: var(--blue-dk); }
     button.search-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
-    /* ── Chips (örnek semptomlar) ── */
     .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
     .chip {
       font-size: 0.75rem;
-      padding: 4px 10px;
+      padding: 5px 11px;
       border-radius: 99px;
       background: var(--blue-lt);
       color: var(--blue);
       cursor: pointer;
       border: 1px solid #c7d6ff;
       font-weight: 500;
-      transition: background 0.1s;
     }
     .chip:active { background: #d4e0ff; }
 
-    /* ── Sonuç listesi ── */
+    /* Sonuç listesi */
     .result-list { display: flex; flex-direction: column; gap: 8px; }
-
     .result-item {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 12px 14px;
+      padding: 13px 14px;
       border: 1.5px solid var(--border);
       border-radius: 10px;
       cursor: pointer;
-      transition: border-color 0.15s, background 0.15s;
       background: var(--bg);
+      transition: border-color 0.15s, background 0.15s;
     }
     .result-item:active, .result-item.selected {
       border-color: var(--blue);
       background: var(--blue-lt);
     }
-    .result-item .icd { font-family: var(--mono); font-size: 0.78rem; color: var(--blue); font-weight: 500; }
-    .result-item .tani { font-size: 0.88rem; font-weight: 500; margin-top: 2px; }
-    .result-item .arrow { color: var(--muted); font-size: 1.1rem; flex-shrink: 0; margin-left: 8px; }
+    .result-item .icd { font-family: var(--mono); font-size: 0.75rem; color: var(--blue); font-weight: 500; }
+    .result-item .tani { font-size: 0.9rem; font-weight: 600; margin-top: 3px; }
+    .result-item .arrow { color: var(--muted); font-size: 1.2rem; flex-shrink: 0; margin-left: 8px; }
 
-    /* ── Reçete kartı ── */
-    .recete-header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 8px;
+    /* Reçete başlık bandı */
+    .recete-band {
+      background: var(--blue);
+      color: #fff;
+      border-radius: 10px;
+      padding: 14px 16px;
       margin-bottom: 16px;
     }
-    .recete-icd {
+    .recete-band .icd-badge {
       font-family: var(--mono);
-      font-size: 0.75rem;
-      background: var(--blue-lt);
-      color: var(--blue);
-      border-radius: 6px;
-      padding: 3px 8px;
-      font-weight: 500;
+      font-size: 0.72rem;
+      background: rgba(255,255,255,0.18);
+      border-radius: 5px;
+      padding: 2px 8px;
+      display: inline-block;
+      margin-bottom: 6px;
     }
-    .recete-tani { font-size: 1rem; font-weight: 600; margin-top: 6px; }
-    .recete-tedavi {
-      font-size: 0.82rem;
+    .recete-band .tani-adi { font-size: 1.05rem; font-weight: 700; }
+    .recete-band .tedavi-ozet {
+      font-size: 0.8rem;
+      opacity: 0.82;
+      margin-top: 5px;
+      line-height: 1.4;
+    }
+
+    /* İlaç kartları */
+    .ilac-section-title {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       color: var(--muted);
-      margin-top: 4px;
+      margin-bottom: 10px;
     }
+    .ilac-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
 
-    .ilac-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
-    .ilac-item {
-      background: var(--bg);
-      border-radius: 8px;
-      padding: 12px;
-      border-left: 3px solid var(--blue);
+    .ilac-card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
     }
-    .ilac-ad { font-weight: 600; font-size: 0.88rem; }
-    .ilac-kullanim { font-size: 0.82rem; color: var(--muted); margin-top: 3px; }
-    .ilac-not {
-      font-size: 0.78rem;
-      color: var(--blue);
-      margin-top: 4px;
-      font-style: italic;
+    .ilac-card-header {
+      background: var(--blue-lt);
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
+    .ilac-no {
+      width: 22px; height: 22px;
+      background: var(--blue);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 0.7rem;
+      font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .ilac-isim { font-weight: 700; font-size: 0.9rem; color: var(--blue); }
+    .ilac-card-body { padding: 10px 14px; background: #fff; }
 
-    .klinik-not {
-      background: var(--red-lt);
-      border-left: 3px solid var(--red);
+    .ilac-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .ilac-row:last-child { margin-bottom: 0; }
+    .ilac-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      min-width: 52px;
+      padding-top: 1px;
+    }
+    .ilac-deger { font-size: 0.86rem; color: var(--text); line-height: 1.4; }
+    .ilac-deger.uyari { color: var(--blue); font-weight: 500; }
+
+    /* Alerji alternatifi */
+    .alerji-kutu {
+      background: #FFF7ED;
+      border: 1px solid #FDBA74;
       border-radius: 8px;
       padding: 10px 12px;
+      margin-top: 8px;
       font-size: 0.82rem;
-      color: var(--red);
+      color: #9A3412;
       line-height: 1.5;
     }
-    .klinik-not strong { display: block; margin-bottom: 3px; font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase; }
+    .alerji-kutu strong { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 3px; }
 
+    /* Klinik not */
+    .klinik-not {
+      background: var(--red-lt);
+      border: 1px solid #FCA5A5;
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+    }
+    .klinik-not-baslik {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--red);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .klinik-not p { font-size: 0.85rem; color: #7F1D1D; line-height: 1.55; }
+
+    /* Acil uyarı */
+    .acil-uyari {
+      background: #FFF1F2;
+      border: 2px solid var(--red);
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+    }
+    .acil-uyari .baslik { font-size: 0.85rem; font-weight: 700; color: var(--red); margin-bottom: 4px; }
+    .acil-uyari p { font-size: 0.83rem; color: #7F1D1D; line-height: 1.5; }
+
+    /* Yasal uyarı */
     .yasal-uyari {
-      background: #FFFBEB;
+      background: var(--orange-lt);
       border: 1px solid #FCD34D;
       border-radius: 8px;
       padding: 10px 12px;
       font-size: 0.78rem;
-      color: #92400E;
-      margin-top: 12px;
+      color: var(--orange);
       line-height: 1.5;
     }
 
-    /* ── Boş durum ── */
-    .empty {
-      text-align: center;
-      padding: 32px 16px;
-      color: var(--muted);
-      font-size: 0.88rem;
+    /* Kopyala / Yazdır butonları */
+    .btn-row { display: flex; gap: 8px; margin-bottom: 14px; }
+    .btn-sm {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 7px 14px;
+      border-radius: 7px;
+      border: 1.5px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      cursor: pointer;
+      transition: background 0.12s;
     }
-    .empty .icon { font-size: 2.5rem; margin-bottom: 8px; }
+    .btn-sm:active { background: var(--bg); }
+    .btn-sm.primary { background: var(--blue); color: #fff; border-color: var(--blue); }
+    .btn-sm.primary:active { background: var(--blue-dk); }
 
-    /* ── Yükleniyor ── */
-    .loading {
-      text-align: center;
-      padding: 24px;
-      color: var(--muted);
-      font-size: 0.88rem;
-    }
+    /* Genel */
+    .empty { text-align: center; padding: 28px 16px; color: var(--muted); font-size: 0.88rem; }
+    .empty .icon { font-size: 2.2rem; margin-bottom: 8px; }
+    .loading { text-align: center; padding: 24px; color: var(--muted); font-size: 0.88rem; }
+    .hata { background: var(--red-lt); color: var(--red); border-radius: 8px; padding: 12px; font-size: 0.85rem; }
 
-    /* ── Hata ── */
-    .hata {
-      background: var(--red-lt);
-      color: var(--red);
-      border-radius: 8px;
-      padding: 12px;
-      font-size: 0.85rem;
-    }
-
-    /* ── Footer ── */
     footer {
       text-align: center;
-      margin-top: 24px;
+      margin-top: 20px;
       font-size: 0.72rem;
       color: var(--muted);
-      line-height: 1.6;
+      line-height: 1.7;
     }
     footer a { color: var(--blue); text-decoration: none; }
+
+    @media print {
+      header, .chip, .chips, button, .search-row, .card-title, footer, .btn-row { display: none !important; }
+      body { background: #fff; }
+      .card { border: none; padding: 0; }
+    }
   </style>
 </head>
 <body>
@@ -250,7 +313,6 @@
 
 <main>
 
-  <!-- Semptom Arama -->
   <div class="card">
     <div class="card-title">Semptom Ara</div>
     <div class="search-row">
@@ -269,24 +331,19 @@
     </div>
   </div>
 
-  <!-- Arama Sonuçları -->
   <div id="sonuclarDiv"></div>
-
-  <!-- Reçete -->
   <div id="receteDiv"></div>
 
   <footer>
-    Bu araç klinik karar desteği amaçlıdır.<br/>
-    Hekim değerlendirmesinin yerini tutmaz.<br/>
+    Klinik karar desteği aracıdır — hekim kararının yerini tutmaz.<br/>
     <a href="/api" target="_blank">API Dokümantasyonu →</a>
   </footer>
 
 </main>
 
 <script>
-  const API = '';  // Aynı domain, boş bırak
+  const API = '';
 
-  // Enter tuşu ile arama
   document.getElementById('semptomInput').addEventListener('keydown', e => {
     if (e.key === 'Enter') semptomAra();
   });
@@ -303,8 +360,7 @@
     const sonuclarDiv = document.getElementById('sonuclarDiv');
     const receteDiv = document.getElementById('receteDiv');
     receteDiv.innerHTML = '';
-
-    sonuclarDiv.innerHTML = '<div class="loading">Aranıyor...</div>';
+    sonuclarDiv.innerHTML = '<div class="loading">🔍 Aranıyor...</div>';
     document.getElementById('araBtn').disabled = true;
 
     try {
@@ -323,7 +379,7 @@
       }
 
       let html = `<div class="card">
-        <div class="card-title">${data.toplam} Tanı Bulundu</div>
+        <div class="card-title">${data.toplam} Tanı Bulundu — Birini seçin</div>
         <div class="result-list">`;
 
       data.sonuclar.forEach(s => {
@@ -348,14 +404,11 @@
   }
 
   async function receteGetir(icd10, el) {
-    // Seçili stili uygula
     document.querySelectorAll('.result-item').forEach(i => i.classList.remove('selected'));
     if (el) el.classList.add('selected');
 
     const receteDiv = document.getElementById('receteDiv');
-    receteDiv.innerHTML = '<div class="loading">Reçete yükleniyor...</div>';
-
-    // Sayfayı aşağı kaydır
+    receteDiv.innerHTML = '<div class="loading">💊 Reçete yükleniyor...</div>';
     setTimeout(() => receteDiv.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
 
     try {
@@ -367,40 +420,97 @@
         return;
       }
 
+      // ACİL uyarı kontrolü
+      const acilKodlar = ['K08.1', 'K12.2'];
+      const acilHtml = acilKodlar.includes(d.icd10) ? `
+        <div class="acil-uyari">
+          <div class="baslik">🚨 ACİL VAKA</div>
+          <p>${d.klinik_not}</p>
+        </div>` : '';
+
+      // İlaç kartları
       let ilaclarHtml = '';
-      (d.ilaclar || []).forEach(ilac => {
+      (d.ilaclar || []).forEach((ilac, i) => {
+        // Penisilin alerjisi alternatifini not'tan ayır
+        const notMetni = ilac.not || '';
+        const alerjiBilgisi = notMetni.toLowerCase().includes('alerji') || notMetni.toLowerCase().includes('penisilin')
+          ? `<div class="alerji-kutu"><strong>⚠ Alerji Alternatifi</strong>${notMetni}</div>` : '';
+        const digerNot = (!notMetni.toLowerCase().includes('alerji') && !notMetni.toLowerCase().includes('penisilin') && notMetni)
+          ? `<div class="ilac-row"><span class="ilac-label">Not</span><span class="ilac-deger uyari">${notMetni}</span></div>` : '';
+
         ilaclarHtml += `
-          <div class="ilac-item">
-            <div class="ilac-ad">💊 ${ilac.etken_madde}</div>
-            <div class="ilac-kullanim">${ilac.kullanim}</div>
-            ${ilac.not ? `<div class="ilac-not">⚠ ${ilac.not}</div>` : ''}
+          <div class="ilac-card">
+            <div class="ilac-card-header">
+              <div class="ilac-no">${i + 1}</div>
+              <div class="ilac-isim">${ilac.etken_madde}</div>
+            </div>
+            <div class="ilac-card-body">
+              <div class="ilac-row">
+                <span class="ilac-label">Kullanım</span>
+                <span class="ilac-deger">${ilac.kullanim}</span>
+              </div>
+              ${digerNot}
+              ${alerjiBilgisi}
+            </div>
           </div>`;
       });
+
+      // Klinik not (acil değilse göster)
+      const klinikNotHtml = d.klinik_not && !acilKodlar.includes(d.icd10) ? `
+        <div class="klinik-not">
+          <div class="klinik-not-baslik">🩺 Klinik Not</div>
+          <p>${d.klinik_not}</p>
+        </div>` : '';
+
+      // Tarih
+      const tarih = new Date().toLocaleDateString('tr-TR', { day:'2-digit', month:'long', year:'numeric' });
 
       receteDiv.innerHTML = `
         <div class="card">
           <div class="card-title">Reçete Şablonu</div>
-          <div class="recete-header">
-            <div>
-              <span class="recete-icd">${d.icd10}</span>
-              <div class="recete-tani">${d.tani_adi}</div>
-              <div class="recete-tedavi">🔧 ${d.tedavi}</div>
-            </div>
+
+          <div class="recete-band">
+            <div class="icd-badge">${d.icd10}</div>
+            <div class="tani-adi">${d.tani_adi}</div>
+            <div class="tedavi-ozet">🔧 ${d.tedavi}</div>
           </div>
-          <div class="ilac-list">${ilaclarHtml}</div>
-          ${d.klinik_not ? `
-            <div class="klinik-not">
-              <strong>Klinik Not</strong>
-              ${d.klinik_not}
-            </div>` : ''}
+
+          ${acilHtml}
+
+          <div class="btn-row">
+            <button class="btn-sm primary" onclick="window.print()">🖨 Yazdır</button>
+            <button class="btn-sm" onclick="receteKopyala()">📋 Metni Kopyala</button>
+          </div>
+
+          <div class="ilac-section-title">İlaçlar</div>
+          <div class="ilac-list" id="ilacListesi">${ilaclarHtml}</div>
+
+          ${klinikNotHtml}
+
           <div class="yasal-uyari">
-            ⚕️ Bu şablon genel rehber niteliğindedir. Her hastanın durumuna göre hekim kararı esastır.
+            ⚕️ Bu şablon genel rehber niteliğindedir. Her hastanın durumuna ve alerjilerine göre hekim kararı esastır. — ${tarih}
           </div>
         </div>`;
+
+      // Kopyalama için veriyi sakla
+      window._sonRecete = { icd10: d.icd10, tani: d.tani_adi, tedavi: d.tedavi, ilaclar: d.ilaclar, klinik_not: d.klinik_not };
 
     } catch (e) {
       receteDiv.innerHTML = `<div class="card"><div class="hata">Bağlantı hatası.</div></div>`;
     }
+  }
+
+  function receteKopyala() {
+    const r = window._sonRecete;
+    if (!r) return;
+    let metin = `TANI: ${r.tani} (${r.icd10})\nTEDAVİ: ${r.tedavi}\n\nİLAÇLAR:\n`;
+    (r.ilaclar || []).forEach((ilac, i) => {
+      metin += `\n${i+1}. ${ilac.etken_madde}\n   Kullanım: ${ilac.kullanim}\n`;
+      if (ilac.not) metin += `   Not: ${ilac.not}\n`;
+    });
+    if (r.klinik_not) metin += `\nKLİNİK NOT: ${r.klinik_not}\n`;
+    metin += `\nDt. Bilal Yıldırım — ADSM`;
+    navigator.clipboard.writeText(metin).then(() => alert('Reçete kopyalandı!'));
   }
 </script>
 
