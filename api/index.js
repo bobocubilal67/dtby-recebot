@@ -1,5 +1,7 @@
 // ============================================
 // ADSM Diş Hekimliği API - ana giriş noktası
+gelistirici: 'Dt. Bilal Yıldırım',
+iletisim: '@DtBilalYildirim',
 // ============================================
 
 const symptoms = require('../data/symptoms.json');
