@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Diş Hekimliği Asistanı — Dt. Bilal Yıldırım</title>
+  <title>DİŞ HEKİMİ YARDIMCI REÇETE MODÜLÜ — Dt. Bilal Yıldırım</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -509,7 +509,7 @@
       if (ilac.not) metin += `   Not: ${ilac.not}\n`;
     });
     if (r.klinik_not) metin += `\nKLİNİK NOT: ${r.klinik_not}\n`;
-    metin += `\nDt. Bilal Yıldırım — ADSM`;
+    metin += `\nDt. Bilal Yıldırım `;
     navigator.clipboard.writeText(metin).then(() => alert('Reçete kopyalandı!'));
   }
 </script>
