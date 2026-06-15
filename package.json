@@ -1,5 +1,5 @@
 {
-  "name": "adsm-dental-api",
+  "name": "dental-api",
   "version": "1.0.0",
   "description": "Kamu Diş Hekimliği Semptom, ICD-10 ve Reçete Şablonu API",
   "main": "api/index.js",
