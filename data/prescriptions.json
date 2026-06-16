@@ -12,9 +12,9 @@
       },
       {
         "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
-        "ticari": ["İbuprofen: Brufen, Nurofen, Advil", "Ketoprofen: Ketonal, Profenid, Bi-profenid", "Naproksen Na: Apranax, Naprosyn, Naxdom", "Tramadol: Tramal, Contramal (şiddetli ağrıda)"],
-        "kullanim": "İbuprofen 400mg 3x1 / Ketoprofen 100mg 2x1 / Naproksen Na 550mg 2x1 — yemekten sonra, 3-5 gün",
-        "not": "Tramadol şiddetli ağrıda kısa süreli kullanılır, bağımlılık riski var",
+        "ticari": ["İbuprofen: Brufen, Nurofen, Advil", "DeksketoprofenTrematamol: Dexday , Dex-fort , Arveles", "Naproksen Na: Apranax, Naprosyn, Naxdom", "Tramadol: Tramal, Contramal (şiddetli ağrıda)"],
+        "kullanim": "İbuprofen 400mg 3x1 / DeksketoprofenTrematamol 50mg 2x1 veya 25mg 3×1/ Naproksen Na 550mg 2x1 — yemekten sonra, 3-5 gün",
+        "not": "DeksketoprofenTrematamol şiddetli ağrıda kısa süreli kullanılır, bağımlılık riski var",
         "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
       },
       {
@@ -40,8 +40,8 @@
       },
       {
         "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
-        "ticari": ["İbuprofen: Brufen, Nurofen, Advil", "Ketoprofen: Ketonal, Profenid, Bi-profenid", "Naproksen Na: Apranax, Naprosyn, Naxdom"],
-        "kullanim": "İbuprofen 400mg 3x1 / Ketoprofen 100mg 2x1 / Naproksen Na 550mg 2x1 — 3 gün",
+        "ticari": ["İbuprofen: Brufen, Nurofen, Advil", "DeksketoprofenTrematamol", "Naproksen Na: Apranax, Naprosyn, Naxdom"],
+        "kullanim": "İbuprofen 400mg 3x1 / Arveles 100mg 3×1 , Dexday 50mg 2x1 / Naproksen Na 550mg 2x1 — 3 gün",
         "not": null,
         "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
       }
@@ -61,9 +61,9 @@
       },
       {
         "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
-        "ticari": ["Ketoprofen: Ketonal 100mg, Profenid, Bi-profenid", "İbuprofen: Brufen 600mg, Ibumax", "Naproksen Na: Apranax Fort 550mg, Naprosyn"],
-        "kullanim": "Ketoprofen 100mg 2x1 / İbuprofen 600mg 3x1 / Naproksen Na 550mg 2x1 — yemekle, 5 gün",
-        "not": "Şiddetli ağrıda Tramadol (Tramal 50mg) eklenebilir",
+        "ticari": ["DeksketoprofenTrematamol", "İbuprofen: Brufen 600mg, Ibumax", "Naproksen Na: Apranax Fort 550mg, Naprosyn"],
+        "kullanim": "Dexday 50mg 2x1 / İbuprofen 600mg 3x1 / Naproksen Na 550mg 2x1 — yemekle, 5 gün",
+        "not": "Şiddetli ağrıda DeksketoprofenTrematamol(Dexday / Dex-fort ) eklenebilir",
         "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
       }
     ],
