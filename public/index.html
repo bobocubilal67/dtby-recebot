@@ -172,8 +172,8 @@
   <div id="receteDiv"></div>
 
   <footer>
-    Klinik karar desteği aracıdır — hekim kararının yerini tutmaz.<br/>
-    <p>Presented by DtBilalYILDIRIM</p>
+    ⛑️Klinik karar desteği aracıdır — Hekim kararının yerini tutmaz.📇 <br/>
+    <p>Presented by DtBilalYILDIRIM 🥼 </p>
   </footer>
 </main>
 
@@ -209,7 +209,7 @@
     const sd = document.getElementById('sonuclarDiv');
     const rd = document.getElementById('receteDiv');
     rd.innerHTML = ''; _recete = null;
-    sd.innerHTML = '<div class="loading">🔍 Aranıyor...</div>';
+    sd.innerHTML = '<div class="loading">🔍 Aranıyor🚑...</div>';
     document.getElementById('araBtn').disabled = true;
     try {
       const res = await fetch(`${API}/api/symptoms?q=${encodeURIComponent(q)}`);
@@ -324,7 +324,7 @@
           <button class="btn-sm" onclick="receteKopyala()">📋 Kopyala</button>
         </div>
         ${icerik}
-        <div class="yasal-uyari">⚕️ Genel rehber niteliğindedir. Her hastanın durumuna ve alerjilerine göre hekim kararı esastır. — ${tarih}</div>
+        <div class="yasal-uyari">⚕️ Genel rehber niteliğindedir. Her hastanın durumuna ve alerjilerine göre hekim kararı esastır.🏥 — ${tarih}</div>
       </div>`;
   }
 
