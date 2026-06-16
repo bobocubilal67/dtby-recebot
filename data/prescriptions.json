@@ -8,36 +8,21 @@
         "ticari": ["Amoksina", "Largopen", "Penoxil"],
         "kullanim": "3x1, 5-7 gün",
         "not": "Penisilin alerjisinde: Klaritromisin 500 mg 2x1 (Klacid, Fromilid, Binoclar)",
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "dikkat",
-          "bobrek": "doz_azalt",
-          "kan_sulandirici": "guvenli"
-        }
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"dikkat","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
       },
       {
-        "etken_madde": "İbuprofen 400 mg",
-        "ticari": ["Brufen", "Nurofen", "Advil"],
-        "kullanim": "3x1, yemekten sonra, 3-5 gün",
-        "not": "Mide şikayeti varsa omeprazol ekle",
-        "ozel_gruplar": {
-          "hamile": "kullanma",
-          "karaciger": "dikkat",
-          "bobrek": "kullanma",
-          "kan_sulandirici": "kullanma"
-        }
+        "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
+        "ticari": ["İbuprofen: Brufen, Nurofen, Advil", "Ketoprofen: Ketonal, Profenid, Bi-profenid", "Naproksen Na: Apranax, Naprosyn, Naxdom", "Tramadol: Tramal, Contramal (şiddetli ağrıda)"],
+        "kullanim": "İbuprofen 400mg 3x1 / Ketoprofen 100mg 2x1 / Naproksen Na 550mg 2x1 — yemekten sonra, 3-5 gün",
+        "not": "Tramadol şiddetli ağrıda kısa süreli kullanılır, bağımlılık riski var",
+        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
       },
       {
-        "etken_madde": "Parasetamol 500 mg",
+        "etken_madde": "Parasetamol 500 mg (hamile/böbrek hastaları için)",
         "ticari": ["Parol", "Minoset", "Tylol"],
         "kullanim": "Gerektiğinde 4-6 saatte bir, max 4g/gün",
-        "not": "İbuprofen yerine tercih edilebilir",
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "kullanma",
-          "bobrek": "dikkat",
-          "kan_sulandirici": "guvenli"
-        }
+        "not": "NSAİİ kullanamayanlarda tercih et",
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"kullanma","bobrek":"dikkat","kan_sulandirici":"guvenli"}
       }
     ],
     "klinik_not": "Akut irreversibl pulpitiste kanal tedavisi şarttır. Antibiyotik tek başına yetmez."
@@ -51,24 +36,14 @@
         "ticari": ["Amoksina", "Largopen", "Penoxil"],
         "kullanim": "3x1, 5 gün (semptomatik ise)",
         "not": "Asemptomatik nekrozda antibiyotik gerekmeyebilir",
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "dikkat",
-          "bobrek": "doz_azalt",
-          "kan_sulandirici": "guvenli"
-        }
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"dikkat","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
       },
       {
-        "etken_madde": "İbuprofen 400 mg",
-        "ticari": ["Brufen", "Nurofen", "Advil"],
-        "kullanim": "3x1, 3 gün",
+        "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
+        "ticari": ["İbuprofen: Brufen, Nurofen, Advil", "Ketoprofen: Ketonal, Profenid, Bi-profenid", "Naproksen Na: Apranax, Naprosyn, Naxdom"],
+        "kullanim": "İbuprofen 400mg 3x1 / Ketoprofen 100mg 2x1 / Naproksen Na 550mg 2x1 — 3 gün",
         "not": null,
-        "ozel_gruplar": {
-          "hamile": "kullanma",
-          "karaciger": "dikkat",
-          "bobrek": "kullanma",
-          "kan_sulandirici": "kullanma"
-        }
+        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
       }
     ],
     "klinik_not": "Vitalite testi negatif. Röntgende apikal değişim olabilir. Kanal tedavisi planla."
@@ -79,27 +54,17 @@
     "ilaclar": [
       {
         "etken_madde": "Amoksisilin + Klavulanat 1000 mg",
-        "ticari": ["Augmentin", "Amoxiclav", "Clavulin"],
+        "ticari": ["Augmentin", "Amoxiclav", "Clavulin", "Klavunat", "Amoklavin"],
         "kullanim": "2x1, 7 gün",
         "not": "Penisilin alerjisinde: Klindamisin 300 mg 3x1 (Cleocin, Dalacin, Klindan)",
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "kullanma",
-          "bobrek": "doz_azalt",
-          "kan_sulandirici": "guvenli"
-        }
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"kullanma","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
       },
       {
-        "etken_madde": "İbuprofen 600 mg",
-        "ticari": ["Brufen 600", "Ibuhexal", "Ibumax"],
-        "kullanim": "3x1, 5 gün, yemekle birlikte",
-        "not": null,
-        "ozel_gruplar": {
-          "hamile": "kullanma",
-          "karaciger": "dikkat",
-          "bobrek": "kullanma",
-          "kan_sulandirici": "kullanma"
-        }
+        "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
+        "ticari": ["Ketoprofen: Ketonal 100mg, Profenid, Bi-profenid", "İbuprofen: Brufen 600mg, Ibumax", "Naproksen Na: Apranax Fort 550mg, Naprosyn"],
+        "kullanim": "Ketoprofen 100mg 2x1 / İbuprofen 600mg 3x1 / Naproksen Na 550mg 2x1 — yemekle, 5 gün",
+        "not": "Şiddetli ağrıda Tramadol (Tramal 50mg) eklenebilir",
+        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
       }
     ],
     "klinik_not": "Oklüzyon kontrolü yap. Dişi kısa bırakmak ağrıyı azaltır."
@@ -110,39 +75,24 @@
     "ilaclar": [
       {
         "etken_madde": "Amoksisilin + Klavulanat 1000 mg",
-        "ticari": ["Augmentin", "Amoxiclav", "Clavulin"],
+        "ticari": ["Augmentin", "Amoxiclav", "Clavulin", "Klavunat", "Amoklavin"],
         "kullanim": "2x1, 7 gün",
         "not": "Penisilin alerjisinde: Klindamisin 300 mg 3x1 (Cleocin, Dalacin, Klindan)",
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "kullanma",
-          "bobrek": "doz_azalt",
-          "kan_sulandirici": "guvenli"
-        }
-      },
-      {
-        "etken_madde": "İbuprofen 400 mg",
-        "ticari": ["Brufen", "Nurofen", "Advil"],
-        "kullanim": "3x1, 5 gün",
-        "not": null,
-        "ozel_gruplar": {
-          "hamile": "kullanma",
-          "karaciger": "dikkat",
-          "bobrek": "kullanma",
-          "kan_sulandirici": "kullanma"
-        }
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"kullanma","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
       },
       {
         "etken_madde": "Metronidazol 500 mg",
         "ticari": ["Flagyl", "Metronid", "Macmiror"],
         "kullanim": "3x1, 5-7 gün (anaerop enfeksiyonda ekle)",
         "not": "Alkol kullanımında kesinlikle içmemeli",
-        "ozel_gruplar": {
-          "hamile": "kullanma",
-          "karaciger": "kullanma",
-          "bobrek": "dikkat",
-          "kan_sulandirici": "dikkat"
-        }
+        "ozel_gruplar": {"hamile":"kullanma","karaciger":"kullanma","bobrek":"dikkat","kan_sulandirici":"dikkat"}
+      },
+      {
+        "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
+        "ticari": ["Ketoprofen: Ketonal 100mg, Profenid, Bi-profenid", "İbuprofen: Brufen 400mg, Nurofen", "Naproksen Na: Apranax 550mg, Naprosyn", "Tramadol: Tramal 50mg (şiddetli ağrıda)"],
+        "kullanim": "Ketoprofen 100mg 2x1 / İbuprofen 400mg 3x1 / Naproksen Na 550mg 2x1 — 5 gün",
+        "not": "Şiddetli ve inatçı ağrıda Tramadol eklenebilir, kısa süreli",
+        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
       }
     ],
     "klinik_not": "Şişlik varsa drenaj şarttır. Antibiyotik tek başına yeterli değil. Ateş ve yayılım varsa sevk."
@@ -152,28 +102,18 @@
     "tedavi": "Diştaşı temizliği, oral hijyen eğitimi",
     "ilaclar": [
       {
-        "etken_madde": "Klorheksidin %0.12 gargara",
-        "ticari": ["Klorhex", "Corsodyl", "Periogard"],
-        "kullanim": "2x1, 1-2 dakika, 10-14 gün",
-        "not": "Uzun süreli kullanımda diş renklenmesi olabilir",
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "guvenli",
-          "bobrek": "guvenli",
-          "kan_sulandirici": "guvenli"
-        }
+        "etken_madde": "Gargara — Seçenekli (birini seç)",
+        "ticari": ["Klorheksidin: Klorhex, Corsodyl, Periogard", "Benzidamin: Tantum Verde Gargara, Benzirin", "Ketoprofen: Ketober Gargara", "Flurbiprofen: Majezik Gargara"],
+        "kullanim": "2x1, 30-60 saniye gargara, 10-14 gün",
+        "not": "Klorheksidin uzun süreli kullanımda diş renklenmesi yapabilir",
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
       },
       {
-        "etken_madde": "İbuprofen 400 mg",
-        "ticari": ["Brufen", "Nurofen", "Advil"],
-        "kullanim": "Gerektiğinde 2x1",
-        "not": "Şiddetli ağrıda",
-        "ozel_gruplar": {
-          "hamile": "kullanma",
-          "karaciger": "dikkat",
-          "bobrek": "kullanma",
-          "kan_sulandirici": "kullanma"
-        }
+        "etken_madde": "Ağrı Kesici — Seçenekli (gerekirse)",
+        "ticari": ["İbuprofen: Brufen 400mg, Nurofen", "Naproksen Na: Apranax 275mg, Naxdom", "Ketoprofen: Ketonal 50mg"],
+        "kullanim": "İbuprofen 400mg 2x1 / Naproksen Na 275mg 2x1 — gerektiğinde",
+        "not": "Şiddetli ağrıda kullan",
+        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
       }
     ],
     "klinik_not": "Diştaşı temizliği yapılmadan ilaç tedavisi yetersiz kalır. Fırçalama tekniği öğret."
@@ -183,28 +123,11 @@
     "tedavi": "Diştaşı temizliği, oral hijyen eğitimi, düzenli kontrol",
     "ilaclar": [
       {
-        "etken_madde": "Klorheksidin %0.12 gargara",
-        "ticari": ["Klorhex", "Corsodyl", "Periogard"],
+        "etken_madde": "Gargara — Seçenekli (birini seç)",
+        "ticari": ["Klorheksidin: Klorhex, Corsodyl, Periogard", "Benzidamin: Tantum Verde Gargara, Andolex", "Ketoprofen: Ketober Gargara", "Flurbiprofen: Majezik Gargara"],
         "kullanim": "2x1, 14 gün (alevlenme döneminde)",
         "not": "Sürekli kullanım önerilmez, periyodik kullan",
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "guvenli",
-          "bobrek": "guvenli",
-          "kan_sulandirici": "guvenli"
-        }
-      },
-      {
-        "etken_madde": "Benzidamin HCl gargara",
-        "ticari": ["Tantum Verde", "Benzirin", "Andolex"],
-        "kullanim": "2x1, 7-10 gün",
-        "not": null,
-        "ozel_gruplar": {
-          "hamile": "dikkat",
-          "karaciger": "guvenli",
-          "bobrek": "guvenli",
-          "kan_sulandirici": "guvenli"
-        }
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
       }
     ],
     "klinik_not": "Kronik vakalarda 3-6 ayda bir profesyonel temizlik şarttır. Diyabet ve hormonal değişiklikleri sorgula."
@@ -215,27 +138,17 @@
     "ilaclar": [
       {
         "etken_madde": "Amoksisilin 500 mg + Metronidazol 500 mg",
-        "ticari": ["Amoksina + Flagyl", "Largopen + Metronid", "Penoxil + Macmiror"],
+        "ticari": ["Amoksisilin: Amoksina, Largopen, Penoxil", "Metronidazol: Flagyl, Metronid, Macmiror"],
         "kullanim": "Her ikisi de 3x1, 7 gün (kombine)",
         "not": "Bu kombinasyon periodontal apselerde çok etkilidir",
-        "ozel_gruplar": {
-          "hamile": "kullanma",
-          "karaciger": "kullanma",
-          "bobrek": "doz_azalt",
-          "kan_sulandirici": "dikkat"
-        }
+        "ozel_gruplar": {"hamile":"kullanma","karaciger":"kullanma","bobrek":"doz_azalt","kan_sulandirici":"dikkat"}
       },
       {
-        "etken_madde": "Klorheksidin %0.12 gargara",
-        "ticari": ["Klorhex", "Corsodyl", "Periogard"],
+        "etken_madde": "Gargara — Seçenekli (birini seç)",
+        "ticari": ["Klorheksidin: Klorhex, Corsodyl, Periogard", "Ketoprofen: Ketober Gargara", "Benzidamin: Tantum Verde Gargara"],
         "kullanim": "2x1, 14 gün",
         "not": null,
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "guvenli",
-          "bobrek": "guvenli",
-          "kan_sulandirici": "guvenli"
-        }
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
       }
     ],
     "klinik_not": "Periodontal apse ile periapical apse ayrımı kritik. Vitalite testi yap."
@@ -249,24 +162,14 @@
         "ticari": ["Dotur", "Tetradox", "Vibramycin"],
         "kullanim": "1x1, 14-21 gün (mekanik tedaviye ek)",
         "not": "18 yaş altına verilmez. Güneşten korunma gerekir",
-        "ozel_gruplar": {
-          "hamile": "kullanma",
-          "karaciger": "dikkat",
-          "bobrek": "guvenli",
-          "kan_sulandirici": "dikkat"
-        }
+        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"guvenli","kan_sulandirici":"dikkat"}
       },
       {
-        "etken_madde": "Klorheksidin %0.12 gargara",
-        "ticari": ["Klorhex", "Corsodyl", "Periogard"],
+        "etken_madde": "Gargara — Seçenekli (birini seç)",
+        "ticari": ["Klorheksidin: Klorhex, Corsodyl, Periogard", "Ketoprofen: Ketober Gargara", "Benzidamin: Tantum Verde Gargara"],
         "kullanim": "2x1, 14 gün",
         "not": null,
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "guvenli",
-          "bobrek": "guvenli",
-          "kan_sulandirici": "guvenli"
-        }
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
       }
     ],
     "klinik_not": "Sigara kullanımını sorgula. Diyabet kontrolü kritik. Mekanik tedavi olmadan antibiyotik yetersiz."
@@ -277,27 +180,17 @@
     "ilaclar": [
       {
         "etken_madde": "Fluorlu diş macunu",
-        "ticari": ["Sensodyne Fluoride", "Colgate Total", "Oral-B Pro"],
+        "ticari": ["Sensodyne Fluoride", "Colgate Total", "Oral-B Pro Expert"],
         "kullanim": "2x1 fırçalama, en az 1450 ppm florid",
         "not": null,
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "guvenli",
-          "bobrek": "guvenli",
-          "kan_sulandirici": "guvenli"
-        }
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
       },
       {
-        "etken_madde": "Parasetamol 500 mg (geçici ağrı için)",
-        "ticari": ["Parol", "Minoset", "Tylol"],
-        "kullanim": "Gerektiğinde 4-6 saatte bir",
-        "not": "Restorasyon yapılana kadar geçici ağrı kontrolü",
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "kullanma",
-          "bobrek": "dikkat",
-          "kan_sulandirici": "guvenli"
-        }
+        "etken_madde": "Ağrı Kesici — Seçenekli (geçici ağrı için)",
+        "ticari": ["Parasetamol: Parol, Minoset, Tylol", "Naproksen Na: Apranax 275mg, Naxdom", "İbuprofen: Brufen 400mg, Nurofen"],
+        "kullanim": "Parasetamol 500mg 4-6 saatte bir / Naproksen Na 275mg 2x1 — restorasyon yapılana kadar",
+        "not": "Parasetamol hamile ve böbrek hastalarında tercih edilir",
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"dikkat","bobrek":"dikkat","kan_sulandirici":"guvenli"}
       }
     ],
     "klinik_not": "Restorasyon sonrası hassasiyet 2-3 haftada geçer. Geçmezse kanal tedavisini değerlendir."
@@ -311,24 +204,14 @@
         "ticari": ["Amoksina", "Largopen", "Penoxil"],
         "kullanim": "3x1, 7 gün",
         "not": "Reimplantasyon sonrası standart",
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "dikkat",
-          "bobrek": "doz_azalt",
-          "kan_sulandirici": "guvenli"
-        }
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"dikkat","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
       },
       {
-        "etken_madde": "İbuprofen 400 mg",
-        "ticari": ["Brufen", "Nurofen", "Advil"],
-        "kullanim": "3x1, 3-5 gün",
+        "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
+        "ticari": ["İbuprofen: Brufen 400mg, Nurofen", "Ketoprofen: Ketonal 100mg, Profenid", "Naproksen Na: Apranax 550mg"],
+        "kullanim": "İbuprofen 400mg 3x1 / Ketoprofen 100mg 2x1 / Naproksen Na 550mg 2x1 — 3-5 gün",
         "not": null,
-        "ozel_gruplar": {
-          "hamile": "kullanma",
-          "karaciger": "dikkat",
-          "bobrek": "kullanma",
-          "kan_sulandirici": "kullanma"
-        }
+        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
       }
     ],
     "klinik_not": "ACİL VAKA! 60 dakika altında reimplantasyon kritik. Süt dişi reimplante edilmez. Kanal tedavisi 7-10 günde başla."
@@ -339,27 +222,17 @@
     "ilaclar": [
       {
         "etken_madde": "Potasyum nitrat içeren diş macunu",
-        "ticari": ["Sensodyne Rapid Relief", "Sensodyne Classic", "Colgate Sensitive"],
+        "ticari": ["Sensodyne Rapid Relief", "Sensodyne Classic", "Colgate Sensitive Pro-Relief"],
         "kullanim": "2x1 düzenli kullanım, min 4 hafta",
-        "not": "Fırçaladıktan sonra tükürme, durulama",
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "guvenli",
-          "bobrek": "guvenli",
-          "kan_sulandirici": "guvenli"
-        }
+        "not": "Fırçaladıktan sonra durulama",
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
       },
       {
         "etken_madde": "Florid vernik (klinik uygulama)",
         "ticari": ["Duraphat", "Bifluorid 12", "Fluor Protector"],
         "kullanim": "3-6 ayda bir klinik uygulama",
         "not": null,
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "guvenli",
-          "bobrek": "guvenli",
-          "kan_sulandirici": "guvenli"
-        }
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
       }
     ],
     "klinik_not": "Asitli içecek ve meyve tüketimini kısıtla. Gece bruksizm varsa gece plağı yaptır."
@@ -369,28 +242,18 @@
     "tedavi": "Altta yatan nedeni tedavi et",
     "ilaclar": [
       {
-        "etken_madde": "İbuprofen 600 mg",
-        "ticari": ["Brufen 600", "Ibuhexal", "Ibumax"],
-        "kullanim": "3x1, 5 gün",
+        "etken_madde": "Amoksisilin + Klavulanat 1000 mg (enfeksiyon kökenli ise)",
+        "ticari": ["Augmentin", "Amoxiclav", "Clavulin", "Klavunat", "Amoklavin"],
+        "kullanim": "2x1, 7 gün",
         "not": null,
-        "ozel_gruplar": {
-          "hamile": "kullanma",
-          "karaciger": "dikkat",
-          "bobrek": "kullanma",
-          "kan_sulandirici": "kullanma"
-        }
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"kullanma","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
       },
       {
-        "etken_madde": "Amoksisilin + Klavulanat 1000 mg",
-        "ticari": ["Augmentin", "Amoxiclav", "Clavulin"],
-        "kullanim": "2x1, 7 gün (enfeksiyon kökenli ise)",
-        "not": null,
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "kullanma",
-          "bobrek": "doz_azalt",
-          "kan_sulandirici": "guvenli"
-        }
+        "etken_madde": "Ağrı Kesici / Kas Gevşetici — Seçenekli",
+        "ticari": ["İbuprofen: Brufen 600mg, Ibumax", "Ketoprofen: Ketonal 100mg, Profenid", "Naproksen Na: Apranax Fort 550mg"],
+        "kullanim": "İbuprofen 600mg 3x1 / Ketoprofen 100mg 2x1 / Naproksen Na 550mg 2x1 — 5 gün",
+        "not": "Kas spazmına bağlıysa Siklobenzaprin 5mg gece 1x1 ekle (Flexban, Flexeril)",
+        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
       }
     ],
     "klinik_not": "Perikoronal apse, masseter spazmı veya TME dislokasyonu ekarte et. İyileşmezse sevk."
@@ -404,36 +267,21 @@
         "ticari": ["Kenakort-A Orabase", "Ledermix", "Kenalog in Orabase"],
         "kullanim": "Yemeklerden sonra ve yatmadan önce lezyona sür, günde 3-4x",
         "not": "Topikal kortikosteroid — 10 günden uzun kullanma",
-        "ozel_gruplar": {
-          "hamile": "dikkat",
-          "karaciger": "guvenli",
-          "bobrek": "guvenli",
-          "kan_sulandirici": "guvenli"
-        }
+        "ozel_gruplar": {"hamile":"dikkat","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
       },
       {
-        "etken_madde": "Klorheksidin %0.12 gargara",
-        "ticari": ["Klorhex", "Corsodyl", "Periogard"],
+        "etken_madde": "Gargara — Seçenekli (birini seç)",
+        "ticari": ["Klorheksidin: Klorhex, Corsodyl, Periogard", "Benzidamin: Tantum Verde Gargara, Benzirin", "Ketoprofen: Ketober Gargara", "Flurbiprofen: Majezik Gargara"],
         "kullanim": "2x1, 30 saniye, 7 gün",
-        "not": null,
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "guvenli",
-          "bobrek": "guvenli",
-          "kan_sulandirici": "guvenli"
-        }
+        "not": "Tantum Verde ve Ketober ağız ülserlerinde analjezik etkili gargaralardır",
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
       },
       {
         "etken_madde": "B12 vitamini 1000 mcg",
         "ticari": ["Nevrin", "B12 Enjeksiyonu", "Cyanocobalamin"],
         "kullanim": "1x1, 6 ay (rekürrent aftlarda)",
         "not": "Eksiklik varsa rekürrensi azaltır",
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "guvenli",
-          "bobrek": "guvenli",
-          "kan_sulandirici": "guvenli"
-        }
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
       }
     ],
     "klinik_not": "2 haftadan uzun iyileşmeyen aft için biyopsi düşün. Behçet hastalığı ekarte et."
@@ -447,12 +295,7 @@
         "ticari": ["Sulcef", "Unasyn", "Dalacin"],
         "kullanim": "Hastanede IV tedavi — oral tedavi yetersiz",
         "not": "Trakeotomi gerekebilir",
-        "ozel_gruplar": {
-          "hamile": "dikkat",
-          "karaciger": "dikkat",
-          "bobrek": "dikkat",
-          "kan_sulandirici": "dikkat"
-        }
+        "ozel_gruplar": {"hamile":"dikkat","karaciger":"dikkat","bobrek":"dikkat","kan_sulandirici":"dikkat"}
       }
     ],
     "klinik_not": "ACİL! Ludwig anjini hayatı tehdit eder. Hemen 2. basamağa sevk et."
@@ -466,24 +309,14 @@
         "ticari": ["Nistatin Süspansiyon", "Mycostatin", "Nilstat"],
         "kullanim": "4x1, 2-3 dakika çalkalayıp yut, 7-14 gün",
         "not": "Yemekten sonra kullan. Protez varsa temizle",
-        "ozel_gruplar": {
-          "hamile": "guvenli",
-          "karaciger": "guvenli",
-          "bobrek": "guvenli",
-          "kan_sulandirici": "guvenli"
-        }
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
       },
       {
-        "etken_madde": "Flukonazol 150 mg",
+        "etken_madde": "Flukonazol 150 mg (dirençli vakalarda)",
         "ticari": ["Triflucan", "Diflucan", "Fluzol"],
-        "kullanim": "1x1, 7-14 gün (dirençli vakalarda)",
+        "kullanim": "1x1, 7-14 gün",
         "not": "Karaciğer yüklü hastalarda dikkat",
-        "ozel_gruplar": {
-          "hamile": "kullanma",
-          "karaciger": "kullanma",
-          "bobrek": "doz_azalt",
-          "kan_sulandirici": "dikkat"
-        }
+        "ozel_gruplar": {"hamile":"kullanma","karaciger":"kullanma","bobrek":"doz_azalt","kan_sulandirici":"dikkat"}
       }
     ],
     "klinik_not": "Predispozan faktörleri sorgula: antibiyotik, kortikosteroid, DM, immün yetmezlik, protez hijyeni."
@@ -493,28 +326,25 @@
     "tedavi": "Splint tedavisi, fizyoterapi, ilaç",
     "ilaclar": [
       {
-        "etken_madde": "İbuprofen 400 mg",
-        "ticari": ["Brufen", "Nurofen", "Advil"],
-        "kullanim": "3x1, 7-10 gün, yemekle birlikte",
-        "not": null,
-        "ozel_gruplar": {
-          "hamile": "kullanma",
-          "karaciger": "dikkat",
-          "bobrek": "kullanma",
-          "kan_sulandirici": "kullanma"
-        }
+        "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
+        "ticari": ["Naproksen Na: Apranax 550mg, Naprosyn (TME için ilk tercih)", "Ketoprofen: Ketonal 100mg, Profenid, Bi-profenid", "İbuprofen: Brufen 400mg, Nurofen"],
+        "kullanim": "Naproksen Na 550mg 2x1 / Ketoprofen 100mg 2x1 / İbuprofen 400mg 3x1 — yemekle, 7-10 gün",
+        "not": "Naproksen Na uzun etkisi nedeniyle TME'de tercih edilir",
+        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
       },
       {
         "etken_madde": "Siklobenzaprin 5 mg (kas gevşetici)",
         "ticari": ["Flexban", "Cyklomed", "Flexeril"],
         "kullanim": "Gece 1x1, 2 hafta",
         "not": "Uyku getirebilir, araç kullanımına dikkat",
-        "ozel_gruplar": {
-          "hamile": "kullanma",
-          "karaciger": "dikkat",
-          "bobrek": "guvenli",
-          "kan_sulandirici": "guvenli"
-        }
+        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"guvenli","kan_sulandirici":"guvenli"}
+      },
+      {
+        "etken_madde": "Gargara — Seçenekli (ağız içi ağrıda)",
+        "ticari": ["Benzidamin: Tantum Verde Gargara", "Flurbiprofen: Majezik Gargara", "Ketoprofen: Ketober Gargara"],
+        "kullanim": "2x1, 7 gün",
+        "not": null,
+        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
       }
     ],
     "klinik_not": "Yumuşak diyet öner. Ağzı geniş açma, sert yemek yeme. Gece bruksizm varsa oklüzal splint."
