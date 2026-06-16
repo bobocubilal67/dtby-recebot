@@ -1,12 +1,12 @@
 [
   {
     "icd10": "K04.0",
-    "tani": "Pulpitis ",
+    "tani": "Pulpitis",
     "semptomlar": ["spontan ağrı", "gece ağrısı", "soğuğa hassasiyet", "sıcağa hassasiyet", "zonklama", "şiddetli ağrı", "pulpit"]
   },
   {
     "icd10": "K04.1",
-    "tani": "Pulpa Nekrozu ",
+    "tani": "Pulpa Nekrozu",
     "semptomlar": ["renk değişikliği", "ağrısız diş", "kararma", "önceden ağrı vardı şimdi geçti", "nekroz"]
   },
   {
@@ -16,23 +16,18 @@
   },
   {
     "icd10": "K04.6",
-    "tani": "Periapikal Apse ",
+    "tani": "Periapical Apse",
     "semptomlar": ["apse", "şişlik", "irin", "ateş", "yüzde şişme", "kökü ucunda apse", "periapical apse"]
   },
   {
-    "icd10": "K04.7",
-    "tani": "Periapikal Kist",
-    "semptomlar": ["kist", "ağrısız şişlik", "röntgende karartı", "periapical kist"]
-  },
-  {
     "icd10": "K05.0",
-    "tani": "Akut Jinjivit (Akut Diş Eti İltihabı)",
-    "semptomlar": ["diş eti kanaması", "kırmızı diş eti", "şiş diş eti", "jinjivit", "dişeti ağrısı", "fırçalarken kanama"]
+    "tani": "Akut Jinjivit",
+    "semptomlar": ["diş eti kanaması", "kırmızı diş eti", "şiş diş eti", "jinjivit", "dişeti ağrısı", "fırçalarken kanama", "kanama"]
   },
   {
     "icd10": "K05.1",
     "tani": "Kronik Jinjivit",
-    "semptomlar": ["kronik diş eti kanaması", "mor diş eti", "sürekli kanama", "kronik jinjivit"]
+    "semptomlar": ["kronik diş eti kanaması", "mor diş eti", "sürekli kanama", "kronik jinjivit", "kanama"]
   },
   {
     "icd10": "K05.2",
@@ -50,13 +45,8 @@
     "semptomlar": ["çürük", "soğuğa hassasiyet", "tatlıya hassasiyet", "siyah leke", "delik", "çürük dişim var"]
   },
   {
-    "icd10": "K02.0",
-    "tani": "Mine Çürüğü",
-    "semptomlar": ["beyaz leke", "başlangıç çürüğü", "mine çürüğü", "erken çürük"]
-  },
-  {
     "icd10": "K08.1",
-    "tani": "Kaza Sonucu Diş Kaybı / Avülsiyon",
+    "tani": "Diş Avülsiyonu (Travma)",
     "semptomlar": ["diş düştü", "diş kırıldı", "travma", "diş koptu", "avülsiyon", "darbe"]
   },
   {
@@ -66,12 +56,12 @@
   },
   {
     "icd10": "K10.2",
-    "tani": "İnflamatuar Çene Hastalığı / Trismus",
+    "tani": "Trismus",
     "semptomlar": ["ağzını açamıyor", "çene kilitlendi", "trismus", "ağız açılamıyor", "çene ağrısı"]
   },
   {
     "icd10": "K12.0",
-    "tani": "Rekürrent Aftöz Stomatit (Aft)",
+    "tani": "Aftöz Stomatit",
     "semptomlar": ["aft", "ağız yarası", "mukoza ülseri", "damakta yara", "yanak içinde yara", "ağız ülseri"]
   },
   {
@@ -81,22 +71,12 @@
   },
   {
     "icd10": "B37.0",
-    "tani": "Oral Kandidiazis (Pamukçuk)",
+    "tani": "Oral Kandidiazis",
     "semptomlar": ["pamukçuk", "beyaz plak", "mantar", "dil beyazlığı", "kandida", "yanma"]
   },
   {
     "icd10": "K07.6",
-    "tani": "TME (Temporomandibüler Eklem) Bozukluğu",
+    "tani": "TME Bozukluğu",
     "semptomlar": ["çenede ses", "tme", "çene eklem ağrısı", "kulak önü ağrısı", "çiğnemede ağrı", "klik sesi"]
-  },
-  {
-    "icd10": "K08.0",
-    "tani": "Sistemik Hastalığa Bağlı Diş Kaybı",
-    "semptomlar": ["diş dökülmesi", "çok sayıda diş kaybı", "erken diş kaybı"]
-  },
-  {
-    "icd10": "K09.0",
-    "tani": "Odontojenik Kist",
-    "semptomlar": ["çene kisti", "odontojenik kist", "büyüyen kist", "çenede şişlik"]
   }
 ]
