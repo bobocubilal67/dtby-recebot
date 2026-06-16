@@ -1,161 +1,230 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DİŞ HEKİMLİĞİ ASİSTANI — Dt. Bilal Yıldırım</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Diş Hekimliği Asistanı — Dt. Bilal Yıldırım</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet"/>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --bg: #F0F4F8; --surface: #fff; --border: #DDE3EA;
-      --blue: #1A56DB; --blue-lt: #EBF0FF; --blue-dk: #1245B5;
-      --red: #C81E1E; --red-lt: #FEF2F2;
-      --green: #057A55; --green-lt: #ECFDF5;
-      --orange: #92400E; --orange-lt: #FFFBEB;
-      --yellow: #D97706; --yellow-lt: #FEF3C7;
-      --text: #111827; --muted: #6B7280;
-      --mono: 'DM Mono', monospace; --sans: 'DM Sans', sans-serif;
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F0F4F8;--surface:#fff;--border:#DDE3EA;
+      --blue:#1A56DB;--blue-lt:#EBF0FF;--blue-dk:#1245B5;
+      --red:#C81E1E;--red-lt:#FEF2F2;
+      --green:#057A55;--green-lt:#ECFDF5;
+      --orange:#92400E;--orange-lt:#FFFBEB;
+      --yellow:#D97706;--yellow-lt:#FEF3C7;
+      --purple:#5B21B6;--purple-lt:#EDE9FE;
+      --teal:#0E7490;--teal-lt:#ECFEFF;
+      --text:#111827;--muted:#6B7280;
+      --mono:'DM Mono',monospace;--sans:'DM Sans',sans-serif;
     }
-    body { font-family: var(--sans); background: var(--bg); color: var(--text); min-height: 100vh; padding-bottom: 80px; }
+    body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:80px}
 
-    header { background: var(--blue); color: #fff; padding: 16px 20px; }
-    header h1 { font-size: 1.05rem; font-weight: 700; }
-    header p { font-size: 0.73rem; opacity: 0.7; margin-top: 3px; }
+    header{background:var(--blue);color:#fff;padding:16px 20px}
+    header h1{font-size:1.05rem;font-weight:700}
+    header p{font-size:0.73rem;opacity:0.7;margin-top:3px}
 
-    main { max-width: 600px; margin: 0 auto; padding: 16px 14px 0; }
+    main{max-width:600px;margin:0 auto;padding:16px 14px 0}
 
-    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px; margin-bottom: 12px; }
-    .card-title { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:12px}
+    .card-title{font-size:0.67rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+
+    /* Hasta tipi seçici */
+    .hasta-tipi{display:flex;gap:10px;margin-bottom:4px}
+    .hasta-btn{
+      flex:1;padding:12px;border:2px solid var(--border);border-radius:10px;
+      background:#fff;font-family:var(--sans);font-size:0.9rem;font-weight:600;
+      cursor:pointer;transition:all .15s;text-align:center
+    }
+    .hasta-btn.active.yetiskin{border-color:var(--blue);background:var(--blue-lt);color:var(--blue)}
+    .hasta-btn.active.cocuk{border-color:var(--purple);background:var(--purple-lt);color:var(--purple)}
+    .hasta-btn:not(.active){color:var(--muted)}
+
+    /* Çocuk kilo/boy girişi */
+    .cocuk-form{background:var(--purple-lt);border:1px solid #C4B5FD;border-radius:10px;padding:14px;margin-bottom:12px}
+    .cocuk-form-title{font-size:0.7rem;font-weight:700;color:var(--purple);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+    .cocuk-inputs{display:flex;gap:10px}
+    .cocuk-input-wrap{flex:1}
+    .cocuk-input-wrap label{font-size:0.72rem;font-weight:600;color:var(--purple);display:block;margin-bottom:4px}
+    .cocuk-input-wrap input{
+      width:100%;padding:9px 12px;border:1.5px solid #C4B5FD;border-radius:8px;
+      font-family:var(--sans);font-size:0.95rem;background:#fff;
+      outline:none;color:var(--text)
+    }
+    .cocuk-input-wrap input:focus{border-color:var(--purple)}
+    .yas-grup{margin-top:10px}
+    .yas-grup label{font-size:0.72rem;font-weight:600;color:var(--purple);display:block;margin-bottom:6px}
+    .yas-chips{display:flex;flex-wrap:wrap;gap:6px}
+    .yas-chip{
+      font-size:0.74rem;padding:4px 10px;border-radius:99px;
+      background:#fff;color:var(--purple);border:1.5px solid #C4B5FD;
+      cursor:pointer;font-weight:500
+    }
+    .yas-chip.active{background:var(--purple);color:#fff;border-color:var(--purple)}
 
     /* Arama */
-    .search-row { display: flex; gap: 8px; }
-    input[type="text"] {
-      flex: 1; font-family: var(--sans); font-size: 0.95rem;
-      padding: 11px 14px; border: 1.5px solid var(--border); border-radius: 9px;
-      outline: none; background: var(--bg); color: var(--text); transition: border-color 0.15s;
+    .search-row{display:flex;gap:8px}
+    input[type="text"]{
+      flex:1;font-family:var(--sans);font-size:.95rem;
+      padding:11px 14px;border:1.5px solid var(--border);border-radius:9px;
+      outline:none;background:var(--bg);color:var(--text);transition:border-color .15s
     }
-    input[type="text"]:focus { border-color: var(--blue); background: #fff; }
-    input[type="text"]::placeholder { color: var(--muted); }
-    .search-btn {
-      font-family: var(--sans); font-size: 0.9rem; font-weight: 600;
-      padding: 11px 20px; background: var(--blue); color: #fff;
-      border: none; border-radius: 9px; cursor: pointer; white-space: nowrap;
+    input[type="text"]:focus{border-color:var(--blue);background:#fff}
+    input[type="text"]::placeholder{color:var(--muted)}
+    .search-btn{
+      font-family:var(--sans);font-size:.9rem;font-weight:600;
+      padding:11px 20px;background:var(--blue);color:#fff;
+      border:none;border-radius:9px;cursor:pointer;white-space:nowrap
     }
-    .search-btn:active { background: var(--blue-dk); }
-    .search-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .search-btn:active{background:var(--blue-dk)}
+    .search-btn:disabled{opacity:.5;cursor:not-allowed}
 
-    .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
-    .chip {
-      font-size: 0.74rem; padding: 5px 11px; border-radius: 99px;
-      background: var(--blue-lt); color: var(--blue);
-      cursor: pointer; border: 1px solid #c7d6ff; font-weight: 500;
+    .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+    .chip{
+      font-size:.74rem;padding:5px 11px;border-radius:99px;
+      background:var(--blue-lt);color:var(--blue);
+      cursor:pointer;border:1px solid #c7d6ff;font-weight:500
     }
-    .chip:active { background: #d4e0ff; }
+    .chip:active{background:#d4e0ff}
 
-    /* Sonuç listesi */
-    .result-list { display: flex; flex-direction: column; gap: 8px; }
-    .result-item {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 12px 14px; border: 1.5px solid var(--border); border-radius: 10px;
-      cursor: pointer; background: var(--bg); transition: border-color 0.15s, background 0.15s;
+    /* Sonuç */
+    .result-list{display:flex;flex-direction:column;gap:8px}
+    .result-item{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:12px 14px;border:1.5px solid var(--border);border-radius:10px;
+      cursor:pointer;background:var(--bg);transition:border-color .15s,background .15s
     }
-    .result-item:active, .result-item.selected { border-color: var(--blue); background: var(--blue-lt); }
-    .result-item .icd { font-family: var(--mono); font-size: 0.74rem; color: var(--blue); font-weight: 500; }
-    .result-item .tani { font-size: 0.9rem; font-weight: 600; margin-top: 3px; }
-    .result-item .arrow { color: var(--muted); font-size: 1.2rem; flex-shrink: 0; margin-left: 8px; }
+    .result-item:active,.result-item.selected{border-color:var(--blue);background:var(--blue-lt)}
+    .result-item .icd{font-family:var(--mono);font-size:.74rem;color:var(--blue);font-weight:500}
+    .result-item .tani{font-size:.9rem;font-weight:600;margin-top:3px}
+    .result-item .arrow{color:var(--muted);font-size:1.2rem;flex-shrink:0;margin-left:8px}
 
     /* Reçete band */
-    .recete-band { background: var(--blue); color: #fff; border-radius: 10px; padding: 14px 16px; margin-bottom: 14px; }
-    .icd-badge { font-family: var(--mono); font-size: 0.7rem; background: rgba(255,255,255,0.18); border-radius: 5px; padding: 2px 8px; display: inline-block; margin-bottom: 6px; }
-    .tani-adi { font-size: 1.05rem; font-weight: 700; }
-    .tedavi-ozet { font-size: 0.79rem; opacity: 0.82; margin-top: 5px; line-height: 1.4; }
+    .recete-band{background:var(--blue);color:#fff;border-radius:10px;padding:14px 16px;margin-bottom:14px}
+    .recete-band.cocuk-band{background:var(--purple)}
+    .icd-badge{font-family:var(--mono);font-size:.7rem;background:rgba(255,255,255,.18);border-radius:5px;padding:2px 8px;display:inline-block;margin-bottom:6px}
+    .tani-adi{font-size:1.05rem;font-weight:700}
+    .tedavi-ozet{font-size:.79rem;opacity:.82;margin-top:5px;line-height:1.4}
+    .hasta-badge{display:inline-block;font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:99px;background:rgba(255,255,255,.25);margin-top:6px}
+
+    /* Çocuk doz kutusu */
+    .doz-hesap{background:var(--purple-lt);border:1px solid #C4B5FD;border-radius:10px;padding:12px 14px;margin-bottom:14px}
+    .doz-hesap-title{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--purple);margin-bottom:8px}
+    .doz-satir{display:flex;justify-content:space-between;align-items:baseline;padding:5px 0;border-bottom:1px solid #DDD6FE}
+    .doz-satir:last-child{border-bottom:none}
+    .doz-ilac{font-size:.82rem;font-weight:600;color:var(--text)}
+    .doz-miktar{font-size:.82rem;color:var(--purple);font-weight:600;text-align:right;font-family:var(--mono)}
 
     /* Sekmeler */
-    .tabs { display: flex; gap: 0; margin-bottom: 14px; border: 1px solid var(--border); border-radius: 9px; overflow: hidden; }
-    .tab {
-      flex: 1; padding: 9px 8px; font-family: var(--sans); font-size: 0.8rem; font-weight: 600;
-      border: none; background: var(--bg); color: var(--muted); cursor: pointer;
-      border-right: 1px solid var(--border); transition: background 0.12s, color 0.12s;
+    .tabs{display:flex;gap:0;margin-bottom:14px;border:1px solid var(--border);border-radius:9px;overflow:hidden}
+    .tab{
+      flex:1;padding:9px 8px;font-family:var(--sans);font-size:.78rem;font-weight:600;
+      border:none;background:var(--bg);color:var(--muted);cursor:pointer;
+      border-right:1px solid var(--border);transition:background .12s,color .12s
     }
-    .tab:last-child { border-right: none; }
-    .tab.active { background: var(--blue); color: #fff; }
+    .tab:last-child{border-right:none}
+    .tab.active{background:var(--blue);color:#fff}
 
     /* İlaç kartları */
-    .ilac-section-title { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
-    .ilac-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
-    .ilac-card { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
-    .ilac-card-header { background: var(--blue-lt); padding: 10px 14px; display: flex; align-items: center; gap: 8px; }
-    .ilac-no { width: 22px; height: 22px; background: var(--blue); color: #fff; border-radius: 50%; font-size: 0.7rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .ilac-isim { font-weight: 700; font-size: 0.88rem; color: var(--blue); }
-    .ilac-ticari { font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
-    .ilac-card-body { padding: 10px 14px; background: #fff; }
-    .ilac-row { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
-    .ilac-row:last-child { margin-bottom: 0; }
-    .ilac-label { font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); min-width: 52px; padding-top: 1px; }
-    .ilac-deger { font-size: 0.85rem; color: var(--text); line-height: 1.4; }
-    .ilac-deger.uyari { color: var(--blue); font-weight: 500; }
+    .ilac-list{display:flex;flex-direction:column;gap:10px;margin-bottom:14px}
+    .ilac-card{border:1px solid var(--border);border-radius:10px;overflow:hidden}
+    .ilac-card-header{background:var(--blue-lt);padding:10px 14px;display:flex;align-items:center;gap:8px}
+    .ilac-card-header.cocuk-header{background:var(--purple-lt)}
+    .ilac-no{width:22px;height:22px;background:var(--blue);color:#fff;border-radius:50%;font-size:.7rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .ilac-no.cocuk-no{background:var(--purple)}
+    .ilac-isim{font-weight:700;font-size:.88rem;color:var(--blue)}
+    .ilac-isim.cocuk-isim{color:var(--purple)}
+    .ilac-card-body{padding:10px 14px;background:#fff}
+    .ilac-row{display:flex;align-items:flex-start;gap:8px;margin-bottom:6px}
+    .ilac-row:last-child{margin-bottom:0}
+    .ilac-label{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);min-width:52px;padding-top:1px}
+    .ilac-deger{font-size:.84rem;color:var(--text);line-height:1.4}
+    .ilac-deger.uyari{color:var(--blue);font-weight:500}
+    .max-doz{font-size:.75rem;color:var(--teal);font-weight:600;margin-top:3px}
+    .alerji-kutu{background:#FFF7ED;border:1px solid #FDBA74;border-radius:8px;padding:9px 12px;margin-top:8px;font-size:.81rem;color:#9A3412;line-height:1.5}
+    .alerji-kutu strong{font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:3px}
 
-    .alerji-kutu { background: #FFF7ED; border: 1px solid #FDBA74; border-radius: 8px; padding: 9px 12px; margin-top: 8px; font-size: 0.81rem; color: #9A3412; line-height: 1.5; }
-    .alerji-kutu strong { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 3px; }
+    /* Özel gruplar */
+    .ozel-tablo{width:100%;border-collapse:collapse;font-size:.78rem;margin-bottom:10px}
+    .ozel-tablo th{background:var(--bg);padding:7px 8px;text-align:left;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);border-bottom:1px solid var(--border)}
+    .ozel-tablo td{padding:7px 8px;border-bottom:1px solid var(--border);vertical-align:middle}
+    .ozel-tablo tr:last-child td{border-bottom:none}
+    .ozel-tablo .ilac-col{font-weight:600;font-size:.8rem}
+    .badge{display:inline-flex;align-items:center;gap:3px;padding:2px 7px;border-radius:99px;font-size:.7rem;font-weight:600;white-space:nowrap}
+    .badge.guvenli{background:var(--green-lt);color:var(--green)}
+    .badge.dikkat{background:var(--yellow-lt);color:var(--yellow)}
+    .badge.kullanma{background:var(--red-lt);color:var(--red)}
+    .badge.doz_azalt{background:#EEF2FF;color:#4338CA}
 
-    /* Özel gruplar tablosu */
-    .ozel-tablo { width: 100%; border-collapse: collapse; font-size: 0.8rem; margin-bottom: 10px; }
-    .ozel-tablo th { background: var(--bg); padding: 7px 10px; text-align: left; font-size: 0.67rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); border-bottom: 1px solid var(--border); }
-    .ozel-tablo td { padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: middle; }
-    .ozel-tablo tr:last-child td { border-bottom: none; }
-    .ozel-tablo .ilac-col { font-weight: 600; font-size: 0.82rem; }
-    .badge { display: inline-flex; align-items: center; gap: 4px; padding: 3px 8px; border-radius: 99px; font-size: 0.72rem; font-weight: 600; white-space: nowrap; }
-    .badge.guvenli { background: var(--green-lt); color: var(--green); }
-    .badge.dikkat { background: var(--yellow-lt); color: var(--yellow); }
-    .badge.kullanma { background: var(--red-lt); color: var(--red); }
-    .badge.doz_azalt { background: #EEF2FF; color: #4338CA; }
+    .klinik-not{background:var(--red-lt);border:1px solid #FCA5A5;border-radius:10px;padding:12px 14px;margin-bottom:12px}
+    .klinik-not-baslik{font-size:.67rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--red);margin-bottom:6px}
+    .klinik-not p{font-size:.84rem;color:#7F1D1D;line-height:1.55}
+    .acil-uyari{background:#FFF1F2;border:2px solid var(--red);border-radius:10px;padding:12px 14px;margin-bottom:12px}
+    .acil-uyari .baslik{font-size:.88rem;font-weight:700;color:var(--red);margin-bottom:4px}
+    .acil-uyari p{font-size:.83rem;color:#7F1D1D;line-height:1.5}
+    .yasal-uyari{background:var(--orange-lt);border:1px solid #FCD34D;border-radius:8px;padding:10px 12px;font-size:.77rem;color:var(--orange);line-height:1.5}
 
-    /* Klinik not */
-    .klinik-not { background: var(--red-lt); border: 1px solid #FCA5A5; border-radius: 10px; padding: 12px 14px; margin-bottom: 12px; }
-    .klinik-not-baslik { font-size: 0.67rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--red); margin-bottom: 6px; }
-    .klinik-not p { font-size: 0.84rem; color: #7F1D1D; line-height: 1.55; }
+    .btn-row{display:flex;gap:8px;margin-bottom:14px}
+    .btn-sm{font-family:var(--sans);font-size:.8rem;font-weight:600;padding:7px 14px;border-radius:7px;border:1.5px solid var(--border);background:#fff;color:var(--text);cursor:pointer}
+    .btn-sm.primary{background:var(--blue);color:#fff;border-color:var(--blue)}
 
-    .acil-uyari { background: #FFF1F2; border: 2px solid var(--red); border-radius: 10px; padding: 12px 14px; margin-bottom: 12px; }
-    .acil-uyari .baslik { font-size: 0.88rem; font-weight: 700; color: var(--red); margin-bottom: 4px; }
-    .acil-uyari p { font-size: 0.83rem; color: #7F1D1D; line-height: 1.5; }
+    .empty{text-align:center;padding:28px 16px;color:var(--muted);font-size:.88rem}
+    .empty .icon{font-size:2.2rem;margin-bottom:8px}
+    .loading{text-align:center;padding:24px;color:var(--muted);font-size:.88rem}
+    .hata{background:var(--red-lt);color:var(--red);border-radius:8px;padding:12px;font-size:.85rem}
 
-    .yasal-uyari { background: var(--orange-lt); border: 1px solid #FCD34D; border-radius: 8px; padding: 10px 12px; font-size: 0.77rem; color: var(--orange); line-height: 1.5; }
+    footer{text-align:center;margin-top:20px;font-size:.71rem;color:var(--muted);line-height:1.7}
+    footer a{color:var(--blue);text-decoration:none}
 
-    .btn-row { display: flex; gap: 8px; margin-bottom: 14px; }
-    .btn-sm { font-family: var(--sans); font-size: 0.8rem; font-weight: 600; padding: 7px 14px; border-radius: 7px; border: 1.5px solid var(--border); background: #fff; color: var(--text); cursor: pointer; }
-    .btn-sm:active { background: var(--bg); }
-    .btn-sm.primary { background: var(--blue); color: #fff; border-color: var(--blue); }
-
-    .empty { text-align: center; padding: 28px 16px; color: var(--muted); font-size: 0.88rem; }
-    .empty .icon { font-size: 2.2rem; margin-bottom: 8px; }
-    .loading { text-align: center; padding: 24px; color: var(--muted); font-size: 0.88rem; }
-    .hata { background: var(--red-lt); color: var(--red); border-radius: 8px; padding: 12px; font-size: 0.85rem; }
-
-    footer { text-align: center; margin-top: 20px; font-size: 0.71rem; color: var(--muted); line-height: 1.7; }
-    footer a { color: var(--blue); text-decoration: none; }
-
-    @media print {
-      header, .chips, .search-row, .btn-row, .tabs, footer { display: none !important; }
-      body { background: #fff; }
-      .card { border: none; padding: 0; }
+    @media print{
+      header,.chips,.search-row,.btn-row,.tabs,.hasta-tipi,.cocuk-form,footer{display:none!important}
+      body{background:#fff}
+      .card{border:none;padding:0}
     }
   </style>
 </head>
 <body>
-
 <header>
-  <h1>🦷🦷 DİŞ HEKİMLİĞİ ASİSTANI 🦷🦷 </h1>
-  
-  <p> @DtBilalYildirim </p>
-  
+  <h1>🦷 Diş Hekimliği Asistanı</h1>
+  <p>Dt. Bilal Yıldırım · @DtBilalYildirim · ADSM</p>
 </header>
-
 <main>
+  <div class="card">
+    <div class="card-title">Hasta Tipi</div>
+    <div class="hasta-tipi">
+      <button class="hasta-btn yetiskin active" onclick="hastaTipiSec('yetiskin')">👨 Yetişkin</button>
+      <button class="hasta-btn cocuk" onclick="hastaTipiSec('cocuk')">👶 Çocuk</button>
+    </div>
+  </div>
+
+  <div id="cocukForm" style="display:none" class="card">
+    <div class="card-title">Çocuk Bilgileri</div>
+    <div class="cocuk-inputs">
+      <div class="cocuk-input-wrap">
+        <label>Kilo (kg)</label>
+        <input type="number" id="cocukKilo" placeholder="örn: 20" min="3" max="80" oninput="dozHesapla()"/>
+      </div>
+      <div class="cocuk-input-wrap">
+        <label>Boy (cm)</label>
+        <input type="number" id="cocukBoy" placeholder="örn: 110" min="50" max="180" oninput="dozHesapla()"/>
+      </div>
+    </div>
+    <div class="yas-grup">
+      <label>Yaş Grubu</label>
+      <div class="yas-chips">
+        <span class="yas-chip" onclick="yasGrupSec(this,'0-2')">0-2 yaş</span>
+        <span class="yas-chip" onclick="yasGrupSec(this,'3-5')">3-5 yaş</span>
+        <span class="yas-chip" onclick="yasGrupSec(this,'6-11')">6-11 yaş</span>
+        <span class="yas-chip" onclick="yasGrupSec(this,'12+')">12+ yaş</span>
+      </div>
+    </div>
+  </div>
+
   <div class="card">
     <div class="card-title">Semptom Ara</div>
     <div class="search-row">
-      <input type="text" id="semptomInput" placeholder="örn: ağrı, apse, kanama..." />
+      <input type="text" id="semptomInput" placeholder="örn: ağrı, apse, kanama..."/>
       <button class="search-btn" id="araBtn" onclick="semptomAra()">Ara</button>
     </div>
     <div class="chips">
@@ -174,174 +243,244 @@
   <div id="receteDiv"></div>
 
   <footer>
-    ⛑️Klinik karar desteği aracıdır — Hekim kararının yerini tutmaz.📇 <br/>
-    <p>Presented by DtBilalYILDIRIM 🥼 </p>
+    Klinik karar desteği aracıdır — hekim kararının yerini tutmaz.<br/>
+    <a href="/api" target="_blank">API Dokümantasyonu →</a>
   </footer>
 </main>
-
 <script>
-  const API = '';
-  let _recete = null;
+  const API='';
+  let _recete=null;
+  let _hastaTipi='yetiskin';
+  let _kilo=null;
+  let _boy=null;
+  let _yasGrup=null;
+  let _aktifSekme='recete';
 
-  const GRUP_ETIKET = {
-    hamile: '🤰 Hamile',
-    karaciger: '🫀 Karaciğer',
-    bobrek: '🫘 Böbrek',
-    kan_sulandirici: '💊 Kan Sul.'
-  };
-  const BADGE = {
-    guvenli: ['guvenli', '✓ Güvenli'],
-    dikkat: ['dikkat', '⚠ Dikkat'],
-    kullanma: ['kullanma', '✕ Kullanma'],
-    doz_azalt: ['doz_azalt', '↓ Doz Azalt']
-  };
+  const GRUP_ETIKET={hamile:'🤰 Hamile',karaciger:'🫀 Karaciğer',bobrek:'🫘 Böbrek',kan_sulandirici:'💊 Kan Sul.'};
+  const BADGE={guvenli:['guvenli','✓ Güvenli'],dikkat:['dikkat','⚠ Dikkat'],kullanma:['kullanma','✕ Kullanma'],doz_azalt:['doz_azalt','↓ Doz Azalt']};
 
-  document.getElementById('semptomInput').addEventListener('keydown', e => {
-    if (e.key === 'Enter') semptomAra();
-  });
+  document.getElementById('semptomInput').addEventListener('keydown',e=>{if(e.key==='Enter')semptomAra()});
 
-  function hizliAra(k) {
-    document.getElementById('semptomInput').value = k;
-    semptomAra();
+  function hastaTipiSec(tip){
+    _hastaTipi=tip;
+    document.querySelectorAll('.hasta-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelector('.hasta-btn.'+tip).classList.add('active');
+    document.getElementById('cocukForm').style.display=tip==='cocuk'?'block':'none';
+    document.getElementById('receteDiv').innerHTML='';
+    _recete=null;
   }
 
-  async function semptomAra() {
-    const q = document.getElementById('semptomInput').value.trim();
-    if (!q) return;
-    const sd = document.getElementById('sonuclarDiv');
-    const rd = document.getElementById('receteDiv');
-    rd.innerHTML = ''; _recete = null;
-    sd.innerHTML = '<div class="loading">🔍 Aranıyor🚑...</div>';
-    document.getElementById('araBtn').disabled = true;
-    try {
-      const res = await fetch(`${API}/api/symptoms?q=${encodeURIComponent(q)}`);
-      const data = await res.json();
-      if (!res.ok || !data.sonuclar || !data.sonuclar.length) {
-        sd.innerHTML = `<div class="card"><div class="empty"><div class="icon">🔍</div>"<strong>${q}</strong>" için sonuç bulunamadı.</div></div>`;
+  function yasGrupSec(el,grup){
+    document.querySelectorAll('.yas-chip').forEach(c=>c.classList.remove('active'));
+    el.classList.add('active');
+    _yasGrup=grup;
+  }
+
+  function dozHesapla(){
+    _kilo=parseFloat(document.getElementById('cocukKilo').value)||null;
+    _boy=parseFloat(document.getElementById('cocukBoy').value)||null;
+  }
+
+  function hizliAra(k){document.getElementById('semptomInput').value=k;semptomAra()}
+
+  async function semptomAra(){
+    const q=document.getElementById('semptomInput').value.trim();
+    if(!q)return;
+    const sd=document.getElementById('sonuclarDiv');
+    const rd=document.getElementById('receteDiv');
+    rd.innerHTML='';_recete=null;
+    sd.innerHTML='<div class="loading">🔍 Aranıyor...</div>';
+    document.getElementById('araBtn').disabled=true;
+    try{
+      const res=await fetch(`${API}/api/symptoms?q=${encodeURIComponent(q)}`);
+      const data=await res.json();
+      if(!res.ok||!data.sonuclar||!data.sonuclar.length){
+        sd.innerHTML=`<div class="card"><div class="empty"><div class="icon">🔍</div>"<strong>${q}</strong>" için sonuç bulunamadı.</div></div>`;
         return;
       }
-      let html = `<div class="card"><div class="card-title">${data.toplam} Tanı Bulundu — Birini Seçin</div><div class="result-list">`;
-      data.sonuclar.forEach(s => {
-        html += `<div class="result-item" onclick="receteGetir('${s.icd10}', this)">
+      let html=`<div class="card"><div class="card-title">${data.toplam} Tanı Bulundu — Birini Seçin</div><div class="result-list">`;
+      data.sonuclar.forEach(s=>{
+        html+=`<div class="result-item" onclick="receteGetir('${s.icd10}',this)">
           <div><div class="icd">${s.icd10}</div><div class="tani">${s.tani}</div></div>
           <span class="arrow">›</span></div>`;
       });
-      html += `</div></div>`;
-      sd.innerHTML = html;
-    } catch(e) {
-      sd.innerHTML = `<div class="card"><div class="hata">Bağlantı hatası.</div></div>`;
-    } finally {
-      document.getElementById('araBtn').disabled = false;
+      html+=`</div></div>`;
+      sd.innerHTML=html;
+    }catch(e){
+      sd.innerHTML=`<div class="card"><div class="hata">Bağlantı hatası.</div></div>`;
+    }finally{document.getElementById('araBtn').disabled=false}
+  }
+
+  async function receteGetir(icd10,el){
+    document.querySelectorAll('.result-item').forEach(i=>i.classList.remove('selected'));
+    if(el)el.classList.add('selected');
+    const rd=document.getElementById('receteDiv');
+    rd.innerHTML='<div class="loading">💊 Reçete yükleniyor...</div>';
+    setTimeout(()=>rd.scrollIntoView({behavior:'smooth',block:'start'}),100);
+    try{
+      const res=await fetch(`${API}/api/prescription/${icd10}`);
+      const d=await res.json();
+      if(!res.ok){rd.innerHTML=`<div class="card"><div class="hata">${d.hata||'Reçete bulunamadı.'}</div></div>`;return}
+      _recete=d;
+      _aktifSekme='recete';
+      renderRecete(d,'recete');
+    }catch(e){
+      rd.innerHTML=`<div class="card"><div class="hata">Bağlantı hatası.</div></div>`;
     }
   }
 
-  async function receteGetir(icd10, el) {
-    document.querySelectorAll('.result-item').forEach(i => i.classList.remove('selected'));
-    if (el) el.classList.add('selected');
-    const rd = document.getElementById('receteDiv');
-    rd.innerHTML = '<div class="loading">💊 Reçete yükleniyor...</div>';
-    setTimeout(() => rd.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
-    try {
-      const res = await fetch(`${API}/api/prescription/${icd10}`);
-      const d = await res.json();
-      if (!res.ok) { rd.innerHTML = `<div class="card"><div class="hata">${d.hata || 'Reçete bulunamadı.'}</div></div>`; return; }
-      _recete = d;
-      renderRecete(d, 'recete');
-    } catch(e) {
-      rd.innerHTML = `<div class="card"><div class="hata">Bağlantı hatası.</div></div>`;
-    }
+  function cocukDozHesapla(ilac){
+    if(!_kilo||!ilac.mg_kg_doz) return null;
+    const tekDoz=Math.round(_kilo*ilac.mg_kg_doz);
+    const gunluk=ilac.mg_kg_gun?Math.round(_kilo*ilac.mg_kg_gun):null;
+    return {tekDoz,gunluk};
   }
 
-  function renderRecete(d, sekme) {
-    const acilKodlar = ['K08.1', 'K12.2'];
-    const acilHtml = acilKodlar.includes(d.icd10) ? `<div class="acil-uyari"><div class="baslik">🚨 ACİL VAKA</div><p>${d.klinik_not}</p></div>` : '';
+  function renderRecete(d,sekme){
+    _aktifSekme=sekme;
+    const isCocuk=_hastaTipi==='cocuk';
+    const veri=isCocuk?(d.cocuk||d.yetiskin):d.yetiskin;
+    const ilaclar=veri?.ilaclar||[];
+    const klinikNot=veri?.klinik_not||d.klinik_not;
+    const acilKodlar=['K08.1','K12.2'];
+    const acilHtml=acilKodlar.includes(d.icd10)?`<div class="acil-uyari"><div class="baslik">🚨 ACİL VAKA</div><p>${klinikNot}</p></div>`:'';
+    const tarih=new Date().toLocaleDateString('tr-TR',{day:'2-digit',month:'long',year:'numeric'});
+    const bandClass=isCocuk?'recete-band cocuk-band':'recete-band';
+    const hastaBadge=isCocuk?`<div class="hasta-badge">👶 Çocuk Reçetesi${_kilo?` · ${_kilo}kg`:''}</div>`:`<div class="hasta-badge">👨 Yetişkin Reçetesi</div>`;
 
-    const tarih = new Date().toLocaleDateString('tr-TR', { day:'2-digit', month:'long', year:'numeric' });
+    // Çocuk doz özeti
+    let dozOzetiHtml='';
+    if(isCocuk&&_kilo){
+      const dozlar=ilaclar.filter(i=>i.mg_kg_doz).map(i=>{
+        const h=cocukDozHesapla(i);
+        if(!h)return '';
+        const isim=i.etken_madde.split('(')[0].trim().split('/')[0].trim();
+        let metin=`${h.tekDoz} mg/doz`;
+        if(h.gunluk) metin+=` — günlük max ${h.gunluk} mg`;
+        return `<div class="doz-satir"><span class="doz-ilac">${isim}</span><span class="doz-miktar">${metin}</span></div>`;
+      }).filter(Boolean).join('');
+      if(dozlar){
+        dozOzetiHtml=`<div class="doz-hesap">
+          <div class="doz-hesap-title">🧮 ${_kilo}kg için Hesaplanan Dozlar</div>
+          ${dozlar}
+        </div>`;
+      }
+    }
 
     // İlaç kartları
-    let ilaclarHtml = '';
-    (d.ilaclar || []).forEach((ilac, i) => {
-      const ticariHtml = ilac.ticari ? `<div class="ilac-ticari">(${ilac.ticari.join(', ')})</div>` : '';
-      const notMetni = ilac.not || '';
-      const alerjiBilgisi = (notMetni.toLowerCase().includes('alerji') || notMetni.toLowerCase().includes('penisilin'))
-        ? `<div class="alerji-kutu"><strong>⚠ Alerji Alternatifi</strong>${notMetni}</div>` : '';
-      const digerNot = (!notMetni.toLowerCase().includes('alerji') && !notMetni.toLowerCase().includes('penisilin') && notMetni)
-        ? `<div class="ilac-row"><span class="ilac-label">Not</span><span class="ilac-deger uyari">${notMetni}</span></div>` : '';
+    let ilaclarHtml='';
+    ilaclar.forEach((ilac,i)=>{
+      const headerClass=isCocuk?'ilac-card-header cocuk-header':'ilac-card-header';
+      const noClass=isCocuk?'ilac-no cocuk-no':'ilac-no';
+      const isimClass=isCocuk?'ilac-isim cocuk-isim':'ilac-isim';
+      const notMetni=ilac.not||'';
+      const alerjiBilgisi=(notMetni.toLowerCase().includes('alerji')||notMetni.toLowerCase().includes('penisilin'))
+        ?`<div class="alerji-kutu"><strong>⚠ Alerji Alternatifi</strong>${notMetni}</div>`:'';
+      const digerNot=(!notMetni.toLowerCase().includes('alerji')&&!notMetni.toLowerCase().includes('penisilin')&&notMetni)
+        ?`<div class="ilac-row"><span class="ilac-label">Not</span><span class="ilac-deger uyari">${notMetni}</span></div>`:'';
 
-      ilaclarHtml += `<div class="ilac-card">
-        <div class="ilac-card-header">
-          <div class="ilac-no">${i+1}</div>
-          <div><div class="ilac-isim">${ilac.etken_madde}</div>${ticariHtml}</div>
+      // Kullanım satırı
+      let kullanim=ilac.kullanim||'';
+      if(isCocuk&&_kilo&&ilac.mg_kg_doz){
+        const h=cocukDozHesapla(ilac);
+        if(h) kullanim=`<strong>${h.tekDoz} mg/doz</strong> — ${ilac.doz_araligi}${ilac.sure?', '+ilac.sure:''}`;
+      }
+
+      const maxDozHtml=ilac.max_gunluk_doz
+        ?`<div class="max-doz">⚡ ${ilac.max_gunluk_doz}</div>`:'';
+
+      ilaclarHtml+=`<div class="ilac-card">
+        <div class="${headerClass}">
+          <div class="${noClass}">${i+1}</div>
+          <div class="${isimClass}">${ilac.etken_madde}</div>
         </div>
         <div class="ilac-card-body">
-          <div class="ilac-row"><span class="ilac-label">Kullanım</span><span class="ilac-deger">${ilac.kullanim}</span></div>
+          <div class="ilac-row"><span class="ilac-label">Kullanım</span><span class="ilac-deger">${kullanim}</span></div>
+          ${maxDozHtml}
           ${digerNot}${alerjiBilgisi}
         </div>
       </div>`;
     });
 
-    // Özel gruplar tablosu
-    const gruplar = ['hamile', 'karaciger', 'bobrek', 'kan_sulandirici'];
-    let ozelHtml = `<table class="ozel-tablo">
-      <thead><tr><th>İlaç</th>${gruplar.map(g => `<th>${GRUP_ETIKET[g]}</th>`).join('')}</tr></thead><tbody>`;
-    (d.ilaclar || []).forEach(ilac => {
-      ozelHtml += `<tr><td class="ilac-col">${ilac.etken_madde.split(' ').slice(0,3).join(' ')}</td>`;
-      gruplar.forEach(g => {
-        const durum = ilac.ozel_gruplar?.[g] || 'dikkat';
-        const [cls, lbl] = BADGE[durum] || BADGE.dikkat;
-        ozelHtml += `<td><span class="badge ${cls}">${lbl}</span></td>`;
+    // Özel gruplar (sadece yetişkin)
+    let ozelHtml='';
+    if(!isCocuk){
+      const gruplar=['hamile','karaciger','bobrek','kan_sulandirici'];
+      ozelHtml=`<table class="ozel-tablo"><thead><tr><th>İlaç</th>${gruplar.map(g=>`<th>${GRUP_ETIKET[g]}</th>`).join('')}</tr></thead><tbody>`;
+      ilaclar.forEach(ilac=>{
+        ozelHtml+=`<tr><td class="ilac-col">${ilac.etken_madde.split('—')[0].trim().substring(0,30)}</td>`;
+        gruplar.forEach(g=>{
+          const durum=ilac.ozel_gruplar?.[g]||'dikkat';
+          const[cls,lbl]=BADGE[durum]||BADGE.dikkat;
+          ozelHtml+=`<td><span class="badge ${cls}">${lbl}</span></td>`;
+        });
+        ozelHtml+=`</tr>`;
       });
-      ozelHtml += `</tr>`;
-    });
-    ozelHtml += `</tbody></table>`;
+      ozelHtml+=`</tbody></table>
+        <div style="font-size:.73rem;color:var(--muted);margin-top:8px;line-height:1.8">
+          <span class="badge guvenli">✓ Güvenli</span>&nbsp;
+          <span class="badge dikkat">⚠ Dikkat</span>&nbsp;
+          <span class="badge kullanma">✕ Kullanma</span>&nbsp;
+          <span class="badge doz_azalt">↓ Doz Azalt</span>
+        </div>`;
+    }
 
-    const klinikNotHtml = d.klinik_not && !acilKodlar.includes(d.icd10)
-      ? `<div class="klinik-not"><div class="klinik-not-baslik">🩺 Klinik Not</div><p>${d.klinik_not}</p></div>` : '';
+    const klinikNotHtml=klinikNot&&!acilKodlar.includes(d.icd10)
+      ?`<div class="klinik-not"><div class="klinik-not-baslik">🩺 Klinik Not</div><p>${klinikNot}</p></div>`:'';
 
-    const icerik = sekme === 'recete'
-      ? `<div class="ilac-section-title">İlaçlar & Ticari İsimler</div><div class="ilac-list">${ilaclarHtml}</div>${klinikNotHtml}`
-      : `<div class="ilac-section-title">Özel Hasta Grupları</div>${ozelHtml}
-         <div style="font-size:0.74rem;color:var(--muted);margin-top:8px;line-height:1.6">
-           <span class="badge guvenli">✓ Güvenli</span> kullanılabilir &nbsp;
-           <span class="badge dikkat">⚠ Dikkat</span> hekim kararıyla &nbsp;
-           <span class="badge kullanma">✕ Kullanma</span> kontrendike &nbsp;
-           <span class="badge doz_azalt">↓ Doz Azalt</span> doz düzenlenmeli
-         </div>`;
+    // Sekmeler
+    const tabsHtml=!isCocuk
+      ?`<div class="tabs">
+          <button class="tab ${sekme==='recete'?'active':''}" onclick="renderRecete(_recete,'recete')">💊 Reçete</button>
+          <button class="tab ${sekme==='ozel'?'active':''}" onclick="renderRecete(_recete,'ozel')">⚕️ Özel Gruplar</button>
+        </div>`:'';
 
-    document.getElementById('receteDiv').innerHTML = `
+    const icerik=sekme==='ozel'
+      ?`<div class="card-title" style="margin-bottom:10px">Özel Hasta Grupları</div>${ozelHtml}`
+      :`<div style="font-size:.67rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px">İlaçlar</div>
+        <div class="ilac-list">${ilaclarHtml}</div>${klinikNotHtml}`;
+
+    document.getElementById('receteDiv').innerHTML=`
       <div class="card">
         <div class="card-title">Reçete Şablonu</div>
-        <div class="recete-band">
+        <div class="${bandClass}">
           <div class="icd-badge">${d.icd10}</div>
           <div class="tani-adi">${d.tani_adi}</div>
           <div class="tedavi-ozet">🔧 ${d.tedavi}</div>
+          ${hastaBadge}
         </div>
         ${acilHtml}
-        <div class="tabs">
-          <button class="tab ${sekme==='recete'?'active':''}" onclick="renderRecete(_recete,'recete')">💊 Reçete</button>
-          <button class="tab ${sekme==='ozel'?'active':''}" onclick="renderRecete(_recete,'ozel')">⚕️ Özel Gruplar</button>
-        </div>
+        ${dozOzetiHtml}
+        ${tabsHtml}
         <div class="btn-row">
           <button class="btn-sm primary" onclick="window.print()">🖨 Yazdır</button>
           <button class="btn-sm" onclick="receteKopyala()">📋 Kopyala</button>
         </div>
         ${icerik}
-        <div class="yasal-uyari">⚕️ Genel rehber niteliğindedir. Her hastanın durumuna ve alerjilerine göre hekim kararı esastır.🏥 — ${tarih}</div>
+        <div class="yasal-uyari">⚕️ Genel rehber niteliğindedir. Her hastanın durumuna göre hekim kararı esastır. — ${tarih}</div>
       </div>`;
   }
 
-  function receteKopyala() {
-    if (!_recete) return;
-    let m = `TANI: ${_recete.tani_adi} (${_recete.icd10})\nTEDAVİ: ${_recete.tedavi}\n\nİLAÇLAR:\n`;
-    (_recete.ilaclar||[]).forEach((ilac,i) => {
-      m += `\n${i+1}. ${ilac.etken_madde}`;
-      if (ilac.ticari) m += ` (${ilac.ticari.join(', ')})`;
-      m += `\n   Kullanım: ${ilac.kullanim}\n`;
-      if (ilac.not) m += `   Not: ${ilac.not}\n`;
+  function receteKopyala(){
+    if(!_recete)return;
+    const isCocuk=_hastaTipi==='cocuk';
+    const veri=isCocuk?(_recete.cocuk||_recete.yetiskin):_recete.yetiskin;
+    let m=`TANI: ${_recete.tani_adi} (${_recete.icd10})\nTEDAVİ: ${_recete.tedavi}\n`;
+    if(isCocuk&&_kilo) m+=`HASTA: Çocuk, ${_kilo}kg${_boy?', '+_boy+'cm':''}\n`;
+    m+=`\nİLAÇLAR:\n`;
+    (veri?.ilaclar||[]).forEach((ilac,i)=>{
+      m+=`\n${i+1}. ${ilac.etken_madde}\n`;
+      if(isCocuk&&_kilo&&ilac.mg_kg_doz){
+        const h=cocukDozHesapla(ilac);
+        if(h) m+=`   Hesaplanan Doz: ${h.tekDoz}mg/doz${h.gunluk?', max '+h.gunluk+'mg/gün':''}\n`;
+      }
+      m+=`   Kullanım: ${ilac.kullanim||''}\n`;
+      if(ilac.max_gunluk_doz) m+=`   Max Doz: ${ilac.max_gunluk_doz}\n`;
+      if(ilac.not) m+=`   Not: ${ilac.not}\n`;
     });
-    if (_recete.klinik_not) m += `\nKLİNİK NOT: ${_recete.klinik_not}\n`;
-    m += `\nDt. Bilal Yıldırım `;
-    navigator.clipboard.writeText(m).then(() => alert('Reçete kopyalandı!'));
+    if(veri?.klinik_not) m+=`\nKLİNİK NOT: ${veri.klinik_not}\n`;
+    m+=`\nDt. Bilal Yıldırım — ADSM`;
+    navigator.clipboard.writeText(m).then(()=>alert('Reçete kopyalandı!'));
   }
 </script>
 </body>
