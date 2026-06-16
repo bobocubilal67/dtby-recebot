@@ -2,328 +2,709 @@
   "K04.0": {
     "tani_adi": "Pulpitis",
     "tedavi": "Kanal tedavisi veya endikasyona göre çekim",
-    "ilaclar": [
-      {
-        "etken_madde": "Amoksisilin 500 mg",
-        "kullanim": "3x1, 5-7 gün",
-        "not": "Penisilin alerjisinde: Klaritromisin 500 mg 2x1 (Klacid, Fromilid, Binoclar)",
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"dikkat","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
-      },
-      {
-        "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
-        "ticari": ["İbuprofen" , "Deksketoprofen Trometamol", "Naproksen Sodyum" , "Tramadol (şiddetli ağrıda)"],
-        "not": "Tramadol şiddetli ağrıda kısa süreli kullanılır, bağımlılık riski var",
-        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
-      },
-      {
-        "etken_madde": "Parasetamol 500 mg (hamile/böbrek hastaları için)",
-        "kullanim": "Gerektiğinde 4-6 saatte bir, max 4g/gün",
-        "not": "NSAİİ kullanamayanlarda tercih et",
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"kullanma","bobrek":"dikkat","kan_sulandirici":"guvenli"}
-      }
-    ],
-    "klinik_not": "Akut irreversibl pulpitiste kanal tedavisi şarttır. Antibiyotik tek başına yetmez."
+    "yetiskin": {
+      "ilaclar": [
+        {
+          "etken_madde": "Amoksisilin 500 mg",
+          "kullanim": "3x1, 5-7 gün",
+          "max_gunluk_doz": "(max 3000 mg/gün)",
+          "not": "Penisilin alerjisinde: Klaritromisin 500 mg 2x1",
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"dikkat","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
+        },
+        {
+          "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
+          "kullanim": "İbuprofen 400mg 3x1 / Deksketoprofen 25mg 3x1 veya 50mg 2x1 / Naproksen Na 550mg 2x1 — yemekten sonra, 3-5 gün",
+          "max_gunluk_doz": "(İbuprofen max 1200mg/gün | Deksketoprofen max 75mg/gün | Naproksen Na max 1100mg/gün)",
+          "not": "Tramadol 50mg şiddetli ağrıda kısa süreli eklenebilir (max 400mg/gün)",
+          "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
+        },
+        {
+          "etken_madde": "Parasetamol 500 mg",
+          "kullanim": "4-6 saatte bir, gerektiğinde",
+          "max_gunluk_doz": "(max 4000 mg/gün)",
+          "not": "NSAİİ kullanamayanlarda tercih et",
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"kullanma","bobrek":"dikkat","kan_sulandirici":"guvenli"}
+        }
+      ],
+      "klinik_not": "Akut irreversibl pulpitiste kanal tedavisi şarttır. Antibiyotik tek başına yetmez."
+    },
+    "cocuk": {
+      "ilaclar": [
+        {
+          "etken_madde": "Amoksisilin süspansiyon",
+          "mg_kg_doz": 25,
+          "mg_kg_gun": 75,
+          "doz_araligi": "3'e böl (8 saatte bir)",
+          "sure": "5-7 gün",
+          "max_gunluk_doz": "(max 3000 mg/gün)",
+          "not": "Penisilin alerjisinde: Azitromisin 10 mg/kg/gün 1x1, 3 gün"
+        },
+        {
+          "etken_madde": "Parasetamol süspansiyon",
+          "mg_kg_doz": 15,
+          "doz_araligi": "4-6 saatte bir (max günde 5 doz)",
+          "sure": "Ağrı geçene kadar",
+          "max_gunluk_doz": "(max 75 mg/kg/gün, 4000 mg'ı geçme)",
+          "not": null
+        },
+        {
+          "etken_madde": "İbuprofen süspansiyon",
+          "mg_kg_doz": 10,
+          "doz_araligi": "6-8 saatte bir",
+          "sure": "3-5 gün",
+          "max_gunluk_doz": "(max 40 mg/kg/gün, 1200 mg'ı geçme)",
+          "not": "6 ay altına verilmez"
+        }
+      ],
+      "klinik_not": "Çocuklarda kanal tedavisi veya çekim endikasyona göre. Ağrı kontrolü öncelikli."
+    }
   },
   "K04.1": {
     "tani_adi": "Pulpa Nekrozu",
     "tedavi": "Kanal tedavisi zorunludur",
-    "ilaclar": [
-      {
-        "etken_madde": "Amoksisilin 500 mg",
-        "kullanim": "3x1, 5 gün (semptomatik ise)",
-        "not": "Asemptomatik nekrozda antibiyotik gerekmeyebilir",
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"dikkat","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
-      },
-      {
-        "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
-        "ticari": ["İbuprofen" , "Deksketoprofen Trometamol" , "Naproksen Sodyum "],
-        "not": null,
-        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
-      }
-    ],
-    "klinik_not": "Vitalite testi negatif. Röntgende apikal değişim olabilir. Kanal tedavisi planla."
+    "yetiskin": {
+      "ilaclar": [
+        {
+          "etken_madde": "Amoksisilin 500 mg (semptomatik ise)",
+          "kullanim": "3x1, 5 gün",
+          "max_gunluk_doz": "(max 3000 mg/gün)",
+          "not": "Asemptomatik nekrozda antibiyotik gerekmeyebilir",
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"dikkat","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
+        },
+        {
+          "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
+          "kullanim": "İbuprofen 400mg 3x1 / Deksketoprofen 25mg 3x1 / Naproksen Na 550mg 2x1 — 3 gün",
+          "max_gunluk_doz": "(İbuprofen max 1200mg/gün | Deksketoprofen max 75mg/gün | Naproksen Na max 1100mg/gün)",
+          "not": null,
+          "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
+        }
+      ],
+      "klinik_not": "Vitalite testi negatif. Röntgende apikal değişim olabilir. Kanal tedavisi planla."
+    },
+    "cocuk": {
+      "ilaclar": [
+        {
+          "etken_madde": "Amoksisilin süspansiyon (semptomatik ise)",
+          "mg_kg_doz": 25,
+          "mg_kg_gun": 75,
+          "doz_araligi": "3'e böl (8 saatte bir)",
+          "sure": "5 gün",
+          "max_gunluk_doz": "(max 3000 mg/gün)",
+          "not": null
+        },
+        {
+          "etken_madde": "Parasetamol süspansiyon",
+          "mg_kg_doz": 15,
+          "doz_araligi": "4-6 saatte bir",
+          "sure": "Ağrı geçene kadar",
+          "max_gunluk_doz": "(max 75 mg/kg/gün, 4000 mg'ı geçme)",
+          "not": null
+        }
+      ],
+      "klinik_not": "Süt dişinde pulpotomi değerlendirilebilir. Daimi dişte kanal tedavisi."
+    }
   },
   "K04.4": {
     "tani_adi": "Akut Apikal Periodontitis",
     "tedavi": "Kanal tedavisi veya çekim, drenaj",
-    "ilaclar": [
-      {
-        "etken_madde": "Amoksisilin + Klavulanat 1000 mg",
-        "kullanim": "2x1, 7 gün",
-        "not": "Penisilin alerjisinde: Klindamisin 300 mg 3x1 ",
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"kullanma","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
-      },
-      {
-        "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
-        "ticari": ["Deksketoprofen Trometamol ", "İbuprofen", "Naproksen Sodyum"],
-        "not": "Şiddetli ağrıda Tramadol eklenebilir",
-        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
-      }
-    ],
-    "klinik_not": "Oklüzyon kontrolü yap. Dişi kısa bırakmak ağrıyı azaltır."
+    "yetiskin": {
+      "ilaclar": [
+        {
+          "etken_madde": "Amoksisilin + Klavulanat 1000 mg",
+          "kullanim": "2x1, 7 gün",
+          "max_gunluk_doz": "(max 2000 mg/gün)",
+          "not": "Penisilin alerjisinde: Klindamisin 300 mg 3x1 (max 1800 mg/gün)",
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"kullanma","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
+        },
+        {
+          "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
+          "kullanim": "İbuprofen 600mg 3x1 / Deksketoprofen 50mg 2x1 / Naproksen Na 550mg 2x1 — yemekle, 5 gün",
+          "max_gunluk_doz": "(İbuprofen max 1800mg/gün | Deksketoprofen max 100mg/gün | Naproksen Na max 1100mg/gün)",
+          "not": "Şiddetli ağrıda Tramadol 50mg eklenebilir (max 400mg/gün)",
+          "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
+        }
+      ],
+      "klinik_not": "Oklüzyon kontrolü yap. Dişi kısa bırakmak ağrıyı azaltır."
+    },
+    "cocuk": {
+      "ilaclar": [
+        {
+          "etken_madde": "Amoksisilin + Klavulanat süspansiyon",
+          "mg_kg_doz": 20,
+          "mg_kg_gun": 40,
+          "doz_araligi": "2'ye böl (12 saatte bir)",
+          "sure": "7 gün",
+          "max_gunluk_doz": "(max 2000 mg/gün)",
+          "not": "Penisilin alerjisinde: Azitromisin 10 mg/kg/gün, 3 gün"
+        },
+        {
+          "etken_madde": "İbuprofen süspansiyon",
+          "mg_kg_doz": 10,
+          "doz_araligi": "6-8 saatte bir",
+          "sure": "5 gün",
+          "max_gunluk_doz": "(max 40 mg/kg/gün, 1200 mg'ı geçme)",
+          "not": "6 ay altına verilmez"
+        },
+        {
+          "etken_madde": "Parasetamol süspansiyon (ibuprofen yetersizse dönüşümlü)",
+          "mg_kg_doz": 15,
+          "doz_araligi": "4-6 saatte bir",
+          "sure": "Ağrı geçene kadar",
+          "max_gunluk_doz": "(max 75 mg/kg/gün, 4000 mg'ı geçme)",
+          "not": null
+        }
+      ],
+      "klinik_not": "Çocuklarda drenaj ve çekim sıklıkla tercih edilir. Oklüzyon kontrolü yap."
+    }
   },
   "K04.6": {
     "tani_adi": "Periapical Apse",
     "tedavi": "Drenaj, kanal tedavisi veya çekim",
-    "ilaclar": [
-      {
-        "etken_madde": "Amoksisilin + Klavulanat 1000 mg",
-        "kullanim": "2x1, 7 gün",
-        "not": "Penisilin alerjisinde: Klindamisin 300 mg 3x1 ",
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"kullanma","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
-      },
-      {
-        "etken_madde": "Metronidazol 500 mg",
-        "kullanim": "3x1, 5-7 gün (anaerop enfeksiyonda ekle)",
-        "not": "Alkol kullanımında kesinlikle içmemeli",
-        "ozel_gruplar": {"hamile":"kullanma","karaciger":"kullanma","bobrek":"dikkat","kan_sulandirici":"dikkat"}
-      },
-      {
-        "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
-        "ticari": ["Deksketoprofen Trometamol", "İbuprofen", "Tramadol(şiddetli ağrıda)"],
-        "not": "Şiddetli ve inatçı ağrıda Tramadol eklenebilir, kısa süreli",
-        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
-      }
-    ],
-    "klinik_not": "Şişlik varsa drenaj şarttır. Antibiyotik tek başına yeterli değil. Ateş ve yayılım varsa sevk."
+    "yetiskin": {
+      "ilaclar": [
+        {
+          "etken_madde": "Amoksisilin + Klavulanat 1000 mg",
+          "kullanim": "2x1, 7 gün",
+          "max_gunluk_doz": "(max 2000 mg/gün)",
+          "not": "Penisilin alerjisinde: Klindamisin 300 mg 3x1 (max 1800 mg/gün)",
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"kullanma","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
+        },
+        {
+          "etken_madde": "Metronidazol 500 mg (anaerop enfeksiyonda ekle)",
+          "kullanim": "3x1, 5-7 gün",
+          "max_gunluk_doz": "(max 2000 mg/gün)",
+          "not": "Alkol kullanımında kesinlikle içmemeli",
+          "ozel_gruplar": {"hamile":"kullanma","karaciger":"kullanma","bobrek":"dikkat","kan_sulandirici":"dikkat"}
+        },
+        {
+          "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
+          "kullanim": "İbuprofen 400mg 3x1 / Deksketoprofen 25mg 3x1 veya 50mg 2x1 / Naproksen Na 550mg 2x1 — 5 gün",
+          "max_gunluk_doz": "(İbuprofen max 1200mg/gün | Deksketoprofen max 75mg/gün | Naproksen Na max 1100mg/gün)",
+          "not": "Şiddetli ağrıda Tramadol 50mg kısa süreli eklenebilir (max 400mg/gün)",
+          "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
+        }
+      ],
+      "klinik_not": "Şişlik varsa drenaj şarttır. Antibiyotik tek başına yeterli değil. Ateş ve yayılım varsa sevk."
+    },
+    "cocuk": {
+      "ilaclar": [
+        {
+          "etken_madde": "Amoksisilin + Klavulanat süspansiyon",
+          "mg_kg_doz": 20,
+          "mg_kg_gun": 40,
+          "doz_araligi": "2'ye böl (12 saatte bir)",
+          "sure": "7 gün",
+          "max_gunluk_doz": "(max 2000 mg/gün)",
+          "not": "Penisilin alerjisinde: Klindamisin 10 mg/kg/gün 3'e böl"
+        },
+        {
+          "etken_madde": "Metronidazol süspansiyon (anaerop enfeksiyonda)",
+          "mg_kg_doz": 7.5,
+          "doz_araligi": "3'e böl (8 saatte bir)",
+          "sure": "5-7 gün",
+          "max_gunluk_doz": "(max 2000 mg/gün)",
+          "not": null
+        },
+        {
+          "etken_madde": "İbuprofen süspansiyon",
+          "mg_kg_doz": 10,
+          "doz_araligi": "6-8 saatte bir",
+          "sure": "5 gün",
+          "max_gunluk_doz": "(max 40 mg/kg/gün, 1200 mg'ı geçme)",
+          "not": "6 ay altına verilmez"
+        }
+      ],
+      "klinik_not": "Çocuklarda apse drenajı öncelikli. Şişlik yayılırsa ACİL sevk."
+    }
   },
   "K05.0": {
     "tani_adi": "Akut Jinjivit",
     "tedavi": "Diştaşı temizliği, oral hijyen eğitimi",
-    "ilaclar": [
-      {
-        "etken_madde": "Gargara — Seçenekli (birini seç)",
-        "ticari": ["Klorheksidin", "Ketoprofen", "Flurbiprofen"],
-        "kullanim": "2x1, 30-60 saniye gargara, 10-14 gün",
-        "not": "Klorheksidin uzun süreli kullanımda diş renklenmesi yapabilir",
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
-      },
-      {
-        "etken_madde": "Ağrı Kesici — Seçenekli (gerekirse)",
-        "ticari": ["İbuprofen", "Naproksen Sodyum", "Deksketoprofen"],
-        "not": "Şiddetli ağrıda kullan",
-        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
-      }
-    ],
-    "klinik_not": "Diştaşı temizliği yapılmadan ilaç tedavisi yetersiz kalır. Fırçalama tekniği öğret."
+    "yetiskin": {
+      "ilaclar": [
+        {
+          "etken_madde": "Gargara — Seçenekli (birini seç)",
+          "kullanim": "2x1, 30-60 saniye, 10-14 gün",
+          "max_gunluk_doz": "(Klorheksidin max 20ml/gün | Benzidamin max 6 kez/gün)",
+          "not": "Klorhex: Corsodyl, Periogard / Benzidamin: Tantum Verde / Ketober Gargara / Majezik Gargara",
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
+        },
+        {
+          "etken_madde": "Ağrı Kesici — Seçenekli (gerekirse)",
+          "kullanim": "İbuprofen 400mg 2x1 / Deksketoprofen 25mg 3x1 / Naproksen Na 275mg 2x1",
+          "max_gunluk_doz": "(İbuprofen max 1200mg/gün | Deksketoprofen max 75mg/gün | Naproksen Na max 550mg/gün)",
+          "not": null,
+          "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
+        }
+      ],
+      "klinik_not": "Diştaşı temizliği yapılmadan ilaç tedavisi yetersiz kalır. Fırçalama tekniği öğret."
+    },
+    "cocuk": {
+      "ilaclar": [
+        {
+          "etken_madde": "Klorheksidin %0.12 gargara (6 yaş üstü)",
+          "kullanim": "2x1, 30 saniye, 10 gün — yutmadan",
+          "max_gunluk_doz": "(max 10ml/gün çocuklarda)",
+          "not": "6 yaş altında gargara önerilmez, yutma riski var"
+        },
+        {
+          "etken_madde": "Parasetamol süspansiyon (ağrıda)",
+          "mg_kg_doz": 15,
+          "doz_araligi": "4-6 saatte bir",
+          "sure": "Gerektiğinde",
+          "max_gunluk_doz": "(max 75 mg/kg/gün, 4000 mg'ı geçme)",
+          "not": null
+        }
+      ],
+      "klinik_not": "Çocuklarda diştaşı temizliği ve fırçalama eğitimi öncelikli. Ebeveyn ile birlikte fırçalama öner."
+    }
   },
   "K05.1": {
     "tani_adi": "Kronik Jinjivit",
     "tedavi": "Diştaşı temizliği, oral hijyen eğitimi, düzenli kontrol",
-    "ilaclar": [
-      {
-        "etken_madde": "Gargara — Seçenekli (birini seç)",
-        "ticari": ["Klorheksidin", "Benzidamin", "Ketoprofen", "Flurbiprofen"],
-        "kullanim": "2x1, 14 gün (alevlenme döneminde)",
-        "not": "Sürekli kullanım önerilmez, periyodik kullan",
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
-      }
-    ],
-    "klinik_not": "Kronik vakalarda 3-6 ayda bir profesyonel temizlik şarttır. Diyabet ve hormonal değişiklikleri sorgula."
+    "yetiskin": {
+      "ilaclar": [
+        {
+          "etken_madde": "Gargara — Seçenekli (birini seç)",
+          "kullanim": "2x1, 14 gün (alevlenme döneminde)",
+          "max_gunluk_doz": "(Klorheksidin max 20ml/gün | Benzidamin max 6 kez/gün)",
+          "not": "Klorhex / Tantum Verde / Ketober Gargara / Majezik Gargara — Sürekli kullanım önerilmez",
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
+        }
+      ],
+      "klinik_not": "3-6 ayda bir profesyonel temizlik şarttır. Diyabet ve hormonal değişiklikleri sorgula."
+    },
+    "cocuk": {
+      "ilaclar": [
+        {
+          "etken_madde": "Klorheksidin %0.12 gargara (6 yaş üstü)",
+          "kullanim": "2x1, 30 saniye, 10-14 gün",
+          "max_gunluk_doz": "(max 10ml/gün)",
+          "not": "6 yaş altında önerilmez"
+        }
+      ],
+      "klinik_not": "Ebeveyn ile birlikte fırçalama ve diş ipi kullanımı öğret. 6 ayda bir kontrol."
+    }
   },
   "K05.2": {
     "tani_adi": "Akut Periodontit / Periodontal Apse",
     "tedavi": "Drenaj, küretaj, antibiyotik",
-    "ilaclar": [
-      {
-        "etken_madde": "Amoksisilin 500 mg + Metronidazol 500 mg",
-        "ticari": ["Amoksisilin", "Metronidazol"],
-        "kullanim": "Her ikisi de 3x1, 7 gün (kombine)",
-        "not": "Bu kombinasyon periodontal apselerde çok etkilidir",
-        "ozel_gruplar": {"hamile":"kullanma","karaciger":"kullanma","bobrek":"doz_azalt","kan_sulandirici":"dikkat"}
-      },
-      {
-        "etken_madde": "Gargara — Seçenekli (birini seç)",
-        "ticari": ["Klorheksidin", "Ketoprofen", "Benzidamin"],
-        "kullanim": "2x1, 14 gün",
-        "not": null,
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
-      }
-    ],
-    "klinik_not": "Periodontal apse ile periapical apse ayrımı kritik. Vitalite testi yap."
+    "yetiskin": {
+      "ilaclar": [
+        {
+          "etken_madde": "Amoksisilin 500 mg + Metronidazol 500 mg (kombine)",
+          "kullanim": "Her ikisi de 3x1, 7 gün",
+          "max_gunluk_doz": "(Amoksisilin max 3000mg/gün | Metronidazol max 2000mg/gün)",
+          "not": "Bu kombinasyon periodontal apselerde çok etkilidir",
+          "ozel_gruplar": {"hamile":"kullanma","karaciger":"kullanma","bobrek":"doz_azalt","kan_sulandirici":"dikkat"}
+        },
+        {
+          "etken_madde": "Gargara — Seçenekli (birini seç)",
+          "kullanim": "2x1, 14 gün",
+          "max_gunluk_doz": "(Klorheksidin max 20ml/gün)",
+          "not": "Klorhex / Tantum Verde / Ketober Gargara",
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
+        }
+      ],
+      "klinik_not": "Periodontal apse ile periapical apse ayrımı kritik. Vitalite testi yap."
+    },
+    "cocuk": {
+      "ilaclar": [
+        {
+          "etken_madde": "Amoksisilin süspansiyon",
+          "mg_kg_doz": 25,
+          "mg_kg_gun": 75,
+          "doz_araligi": "3'e böl (8 saatte bir)",
+          "sure": "7 gün",
+          "max_gunluk_doz": "(max 3000 mg/gün)",
+          "not": null
+        },
+        {
+          "etken_madde": "Metronidazol süspansiyon",
+          "mg_kg_doz": 7.5,
+          "doz_araligi": "3'e böl (8 saatte bir)",
+          "sure": "7 gün",
+          "max_gunluk_doz": "(max 2000 mg/gün)",
+          "not": null
+        }
+      ],
+      "klinik_not": "Çocuklarda drenaj öncelikli. Periodontal apse nadir — sistemik hastalık ekarte et."
+    }
   },
   "K05.3": {
     "tani_adi": "Kronik Periodontit",
-    "tedavi": "Skaling ve kök yüzeyi düzleştirme, periodontal cerrahi gerekebilir",
-    "ilaclar": [
-      {
-        "etken_madde": "Doksisiklin 100 mg",
-        "kullanim": "1x1, 14-21 gün (mekanik tedaviye ek)",
-        "not": "18 yaş altına verilmez. Güneşten korunma gerekir",
-        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"guvenli","kan_sulandirici":"dikkat"}
-      },
-      {
-        "etken_madde": "Gargara — Seçenekli (birini seç)",
-        "ticari": ["Klorheksidin", "Ketoprofen", "Benzidamin"],
-        "kullanim": "2x1, 14 gün",
-        "not": null,
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
-      }
-    ],
-    "klinik_not": "Sigara kullanımını sorgula. Diyabet kontrolü kritik. Mekanik tedavi olmadan antibiyotik yetersiz."
+    "tedavi": "Skaling ve kök yüzeyi düzleştirme",
+    "yetiskin": {
+      "ilaclar": [
+        {
+          "etken_madde": "Doksisiklin 100 mg",
+          "kullanim": "1x1, 14-21 gün (mekanik tedaviye ek)",
+          "max_gunluk_doz": "(max 200 mg/gün)",
+          "not": "18 yaş altına verilmez. Güneşten korunma gerekir",
+          "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"guvenli","kan_sulandirici":"dikkat"}
+        },
+        {
+          "etken_madde": "Gargara — Seçenekli (birini seç)",
+          "kullanim": "2x1, 14 gün",
+          "max_gunluk_doz": "(Klorheksidin max 20ml/gün)",
+          "not": "Klorhex / Tantum Verde / Ketober Gargara",
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
+        }
+      ],
+      "klinik_not": "Sigara kullanımını sorgula. Diyabet kontrolü kritik. Mekanik tedavi olmadan antibiyotik yetersiz."
+    },
+    "cocuk": {
+      "ilaclar": [
+        {
+          "etken_madde": "Amoksisilin süspansiyon (agresif periodontitiste)",
+          "mg_kg_doz": 25,
+          "mg_kg_gun": 75,
+          "doz_araligi": "3'e böl",
+          "sure": "7-14 gün",
+          "max_gunluk_doz": "(max 3000 mg/gün)",
+          "not": "Agresif periodontit nadir — periodontoloji konsültasyonu önerilir"
+        }
+      ],
+      "klinik_not": "Çocuklarda kronik periodontit nadirdir. Sistemik hastalık (Papillon-Lefèvre vb.) ekarte et."
+    }
   },
   "K02.1": {
     "tani_adi": "Dentin Çürüğü",
     "tedavi": "Kompozit/amalgam restorasyon",
-    "ilaclar": [
-      {
-        "etken_madde": "Fluorlu diş macunu",
-        "kullanim": "2x1 fırçalama, en az 1450 ppm florid",
-        "not": null,
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
-      },
-      {
-        "etken_madde": "Ağrı Kesici — Seçenekli (geçici ağrı için)",
-        "ticari": ["Parasetamol", "Naproksen Sodyum", "İbuprofen"],
-        "kullanim": "Parasetamol 500mg 4-6 saatte bir / Naproksen Na 275mg 2x1 — restorasyon yapılana kadar",
-        "not": "Parasetamol hamile ve böbrek hastalarında tercih edilir",
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"dikkat","bobrek":"dikkat","kan_sulandirici":"guvenli"}
-      }
-    ],
-    "klinik_not": "Restorasyon sonrası hassasiyet 2-3 haftada geçer. Geçmezse kanal tedavisini değerlendir."
+    "yetiskin": {
+      "ilaclar": [
+        {
+          "etken_madde": "Fluorlu diş macunu (günlük kullanım)",
+          "kullanim": "2x1 fırçalama, en az 1450 ppm florid",
+          "max_gunluk_doz": "(bezelye kadar, yutmadan)",
+          "not": null,
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
+        },
+        {
+          "etken_madde": "Ağrı Kesici — Seçenekli (geçici ağrı için)",
+          "kullanim": "Parasetamol 500mg 4-6 saatte bir / Naproksen Na 275mg 2x1",
+          "max_gunluk_doz": "(Parasetamol max 4000mg/gün | Naproksen Na max 550mg/gün)",
+          "not": "Restorasyon yapılana kadar geçici ağrı kontrolü",
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"dikkat","bobrek":"dikkat","kan_sulandirici":"guvenli"}
+        }
+      ],
+      "klinik_not": "Restorasyon sonrası hassasiyet 2-3 haftada geçer. Geçmezse kanal tedavisini değerlendir."
+    },
+    "cocuk": {
+      "ilaclar": [
+        {
+          "etken_madde": "Fluorlu diş macunu (yaşa uygun)",
+          "kullanim": "0-3 yaş: pirinç tanesi kadar | 3-6 yaş: bezelye kadar | 6 yaş üstü: normal",
+          "max_gunluk_doz": "(yutmadan, az miktarda)",
+          "not": "500-1000 ppm florid 0-6 yaş için, 1450 ppm 6 yaş üstü için"
+        },
+        {
+          "etken_madde": "Parasetamol süspansiyon (geçici ağrıda)",
+          "mg_kg_doz": 15,
+          "doz_araligi": "4-6 saatte bir",
+          "sure": "Gerektiğinde",
+          "max_gunluk_doz": "(max 75 mg/kg/gün, 4000 mg'ı geçme)",
+          "not": null
+        }
+      ],
+      "klinik_not": "Süt dişlerinde çürük tedavisi ihmal edilmemeli. Flor vernik 6 ayda bir uygulanabilir."
+    }
   },
   "K08.1": {
     "tani_adi": "Diş Avülsiyonu",
     "tedavi": "ACİL: Reimplantasyon — dişi soğuk sütte veya serum fizyolojik'te sakla",
-    "ilaclar": [
-      {
-        "etken_madde": "Amoksisilin 500 mg",
-        "kullanim": "3x1, 7 gün",
-        "not": "Reimplantasyon sonrası standart",
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"dikkat","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
-      },
-      {
-        "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
-        "ticari": ["İbuprofen", "Deksketoprofen Trometamol", "NaproksenSodyum],
-        "kullanim": "İbuprofen 400mg 3x1 / Deksketoprofen 25mg 3x1 veya 50mg 2x1  / Naproksen Na 550mg 2x1 — 3-5 gün",
-        "not": null,
-        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
-      }
-    ],
-    "klinik_not": "ACİL VAKA! 60 dakika altında reimplantasyon kritik. Süt dişi reimplante edilmez. Kanal tedavisi 7-10 günde başla."
+    "yetiskin": {
+      "ilaclar": [
+        {
+          "etken_madde": "Amoksisilin 500 mg",
+          "kullanim": "3x1, 7 gün",
+          "max_gunluk_doz": "(max 3000 mg/gün)",
+          "not": "Reimplantasyon sonrası standart",
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"dikkat","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
+        },
+        {
+          "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
+          "kullanim": "İbuprofen 400mg 3x1 / Deksketoprofen 25mg 3x1 / Naproksen Na 550mg 2x1 — 3-5 gün",
+          "max_gunluk_doz": "(İbuprofen max 1200mg/gün | Deksketoprofen max 75mg/gün | Naproksen Na max 1100mg/gün)",
+          "not": null,
+          "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
+        }
+      ],
+      "klinik_not": "ACİL VAKA! 60 dakika altında reimplantasyon kritik. Süt dişi reimplante edilmez. Kanal tedavisi 7-10 günde başla."
+    },
+    "cocuk": {
+      "ilaclar": [
+        {
+          "etken_madde": "Amoksisilin süspansiyon",
+          "mg_kg_doz": 25,
+          "mg_kg_gun": 75,
+          "doz_araligi": "3'e böl (8 saatte bir)",
+          "sure": "7 gün",
+          "max_gunluk_doz": "(max 3000 mg/gün)",
+          "not": "SÜT DİŞİ reimplante edilmez!"
+        },
+        {
+          "etken_madde": "Parasetamol süspansiyon",
+          "mg_kg_doz": 15,
+          "doz_araligi": "4-6 saatte bir",
+          "sure": "3-5 gün",
+          "max_gunluk_doz": "(max 75 mg/kg/gün)",
+          "not": null
+        }
+      ],
+      "klinik_not": "ACİL! Süt dişi reimplante edilmez. Daimi dişte 60 dakika kritik. Tetanoz durumunu sorgula."
+    }
   },
   "K08.8": {
     "tani_adi": "Dentin Hassasiyeti",
     "tedavi": "Duyarsızlaştırma tedavisi",
-    "ilaclar": [
-      {
-        "etken_madde": "Potasyum nitrat içeren diş macunu",
-        "kullanim": "2x1 düzenli kullanım, min 4 hafta",
-        "not": "Fırçaladıktan sonra durulama",
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
-      },
-      {
-        "etken_madde": "Florid vernik (klinik uygulama)",
-        "kullanim": "3-6 ayda bir klinik uygulama",
-        "not": null,
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
-      }
-    ],
-    "klinik_not": "Asitli içecek ve meyve tüketimini kısıtla. Gece bruksizm varsa gece plağı yaptır."
+    "yetiskin": {
+      "ilaclar": [
+        {
+          "etken_madde": "Potasyum nitrat içeren diş macunu",
+          "kullanim": "2x1 düzenli kullanım, min 4 hafta",
+          "max_gunluk_doz": "(bezelye kadar, yutmadan)",
+          "not": null,
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
+        },
+        {
+          "etken_madde": "Florid vernik (klinik uygulama)",
+          "kullanim": "3-6 ayda bir klinik uygulama",
+          "max_gunluk_doz": "(tek seans uygulama)",
+          "not": null,
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
+        }
+      ],
+      "klinik_not": "Asitli içecek ve meyve tüketimini kısıtla. Gece bruksizm varsa gece plağı yaptır."
+    },
+    "cocuk": {
+      "ilaclar": [
+        {
+          "etken_madde": "Yaşa uygun hassasiyet macunu",
+          "kullanim": "2x1, 6 yaş üstü için",
+          "max_gunluk_doz": "(bezelye kadar)",
+          "not": "6 yaş altında yutma riski — normal florid macunu öner"
+        },
+        {
+          "etken_madde": "Florid vernik (klinik uygulama)",
+          "kullanim": "6 ayda bir",
+          "max_gunluk_doz": "(tek seans)",
+          "not": null
+        }
+      ],
+      "klinik_not": "Çocuklarda hassasiyet sık görülür. Fırçalama tekniğini kontrol et. Asitli içecekleri kısıtla."
+    }
   },
   "K10.2": {
     "tani_adi": "Trismus",
     "tedavi": "Altta yatan nedeni tedavi et",
-    "ilaclar": [
-      {
-        "etken_madde": "Amoksisilin + Klavulanik Asit 1000 mg (enfeksiyon kökenli ise)",
-        "kullanim": "2x1, 7 gün",
-        "not": null,
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"kullanma","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
-      },
-      {
-        "etken_madde": "Ağrı Kesici / Kas Gevşetici — Seçenekli",
-        "ticari": ["İbuprofen", "Deksketoprofen Trometamol", "Naproksen Sodyum"],
-        "kullanim": "İbuprofen 600mg 3x1 / Deksketoprofen 25mg 3x1  veya 50mg 2x1 / Naproksen Na 550mg 2x1 — 5 gün",
-        "not": "Kas spazmına bağlıysa Siklobenzaprin 5mg gece 1x1 ekle ",
-        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
-      }
-    ],
-    "klinik_not": "Perikoronal apse, masseter spazmı veya TME dislokasyonu ekarte et. İyileşmezse sevk."
+    "yetiskin": {
+      "ilaclar": [
+        {
+          "etken_madde": "Amoksisilin + Klavulanat 1000 mg (enfeksiyon kökenli ise)",
+          "kullanim": "2x1, 7 gün",
+          "max_gunluk_doz": "(max 2000 mg/gün)",
+          "not": null,
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"kullanma","bobrek":"doz_azalt","kan_sulandirici":"guvenli"}
+        },
+        {
+          "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
+          "kullanim": "İbuprofen 600mg 3x1 / Deksketoprofen 50mg 2x1 / Naproksen Na 550mg 2x1 — 5 gün",
+          "max_gunluk_doz": "(İbuprofen max 1800mg/gün | Deksketoprofen max 100mg/gün | Naproksen Na max 1100mg/gün)",
+          "not": "Kas spazmına bağlıysa Siklobenzaprin 5mg gece 1x1 ekle (max 30mg/gün)",
+          "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
+        }
+      ],
+      "klinik_not": "Perikoronal apse, masseter spazmı veya TME dislokasyonu ekarte et. İyileşmezse sevk."
+    },
+    "cocuk": {
+      "ilaclar": [
+        {
+          "etken_madde": "Amoksisilin + Klavulanat süspansiyon (enfeksiyon ise)",
+          "mg_kg_doz": 20,
+          "mg_kg_gun": 40,
+          "doz_araligi": "2'ye böl (12 saatte bir)",
+          "sure": "7 gün",
+          "max_gunluk_doz": "(max 2000 mg/gün)",
+          "not": null
+        },
+        {
+          "etken_madde": "İbuprofen süspansiyon",
+          "mg_kg_doz": 10,
+          "doz_araligi": "6-8 saatte bir",
+          "sure": "5 gün",
+          "max_gunluk_doz": "(max 40 mg/kg/gün)",
+          "not": null
+        }
+      ],
+      "klinik_not": "Çocuklarda trismus nadir — perikoroner apse veya enfeksiyon ekarte et. Sevk düşün."
+    }
   },
   "K12.0": {
     "tani_adi": "Aftöz Stomatit",
     "tedavi": "Semptomatik tedavi, bariyer uygulama",
-    "ilaclar": [
-      {
-        "etken_madde": "Triamsinolon asetonid %0.1 orabase",
-        "kullanim": "Yemeklerden sonra ve yatmadan önce lezyona sür, günde 3-4x",
-        "not": "Topikal kortikosteroid — 10 günden uzun kullanma",
-        "ozel_gruplar": {"hamile":"dikkat","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
-      },
-      {
-        "etken_madde": "Gargara — Seçenekli (birini seç)",
-        "ticari": ["Klorheksidin", "Benzidamin", "Ketoprofen", "Flurbiprofen"],
-        "kullanim": "2x1, 30 saniye, 7 gün",
-        "not": "Benzidamin ve ketoprofen ağız ülserlerinde analjezik etkili gargaralardır",
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
-      },
-      {
-        "etken_madde": "B12 vitamini 1000 mcg",
-        "kullanim": "1x1, 6 ay (rekürrent aftlarda)",
-        "not": "Eksiklik varsa rekürrensi azaltır",
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
-      }
-    ],
-    "klinik_not": "2 haftadan uzun iyileşmeyen aft için biyopsi düşün. Behçet hastalığı ekarte et."
+    "yetiskin": {
+      "ilaclar": [
+        {
+          "etken_madde": "Triamsinolon asetonid %0.1 orabase",
+          "kullanim": "Yemeklerden sonra ve yatmadan önce lezyona sür, günde 3-4x",
+          "max_gunluk_doz": "(max 4 uygulama/gün, 10 günden uzun kullanma)",
+          "not": "Topikal kortikosteroid",
+          "ozel_gruplar": {"hamile":"dikkat","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
+        },
+        {
+          "etken_madde": "Gargara — Seçenekli (birini seç)",
+          "kullanim": "2x1, 30 saniye, 7 gün",
+          "max_gunluk_doz": "(Klorheksidin max 20ml/gün | Benzidamin max 6 kez/gün)",
+          "not": "Tantum Verde ve Ketober Gargara ağız ülserlerinde analjezik etkili. Majezik Gargara da uygundur",
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
+        },
+        {
+          "etken_madde": "B12 vitamini 1000 mcg (rekürrent aftlarda)",
+          "kullanim": "1x1, 6 ay",
+          "max_gunluk_doz": "(max 1000 mcg/gün)",
+          "not": "Eksiklik varsa rekürrensi azaltır",
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
+        }
+      ],
+      "klinik_not": "2 haftadan uzun iyileşmeyen aft için biyopsi düşün. Behçet hastalığı ekarte et."
+    },
+    "cocuk": {
+      "ilaclar": [
+        {
+          "etken_madde": "Triamsinolon asetonid %0.1 orabase (5 yaş üstü)",
+          "kullanim": "Lezyona günde 3x sür, 7 gün",
+          "max_gunluk_doz": "(max 3 uygulama/gün)",
+          "not": "5 yaş altında yutma riski — kullanma"
+        },
+        {
+          "etken_madde": "Klorheksidin gargara (6 yaş üstü)",
+          "kullanim": "2x1, 30 saniye, 7 gün — yutmadan",
+          "max_gunluk_doz": "(max 10ml/gün)",
+          "not": "6 yaş altında önerilmez"
+        },
+        {
+          "etken_madde": "Parasetamol süspansiyon (ağrıda)",
+          "mg_kg_doz": 15,
+          "doz_araligi": "4-6 saatte bir",
+          "sure": "Gerektiğinde",
+          "max_gunluk_doz": "(max 75 mg/kg/gün)",
+          "not": null
+        }
+      ],
+      "klinik_not": "Çocuklarda rekürrent aft için hematolojik tetkik öner. B12, demir, folat eksikliği sorgula."
+    }
   },
   "K12.2": {
     "tani_adi": "Ağız Tabanı Apsesi / Sellülit",
-    "tedavi": "ACİL SEVK — Hastane koşullarında IV tedavi gerektirir",
-    "ilaclar": [
-      {
-        "etken_madde": "IV Ampisilin-Sulbaktam veya Klindamisin",
-        "kullanim": "Hastanede IV tedavi — oral tedavi yetersiz",
-        "not": "Trakeotomi gerekebilir",
-        "ozel_gruplar": {"hamile":"dikkat","karaciger":"dikkat","bobrek":"dikkat","kan_sulandirici":"dikkat"}
-      }
-    ],
-    "klinik_not": "ACİL! Ludwig anjini hayatı tehdit eder. Hemen 2. basamağa sevk et."
+    "tedavi": "ACİL SEVK — Hastane koşullarında IV tedavi",
+    "yetiskin": {
+      "ilaclar": [
+        {
+          "etken_madde": "IV Ampisilin-Sulbaktam veya Klindamisin",
+          "kullanim": "Hastanede IV tedavi — oral tedavi yetersiz",
+          "max_gunluk_doz": "(IV doz hastane protokolüne göre)",
+          "not": "Trakeotomi gerekebilir",
+          "ozel_gruplar": {"hamile":"dikkat","karaciger":"dikkat","bobrek":"dikkat","kan_sulandirici":"dikkat"}
+        }
+      ],
+      "klinik_not": "ACİL! Ludwig anjini hayatı tehdit eder. Hemen 2. basamağa sevk et."
+    },
+    "cocuk": {
+      "ilaclar": [
+        {
+          "etken_madde": "IV Ampisilin-Sulbaktam",
+          "kullanim": "Hastanede IV tedavi",
+          "max_gunluk_doz": "(IV doz: 200 mg/kg/gün, 4'e böl)",
+          "not": "ACİL SEVK — oral tedavi kesinlikle yetersiz"
+        }
+      ],
+      "klinik_not": "ACİL! Çocuklarda hızlı yayılım riski yüksek. Hava yolu güvenliği öncelikli. Hemen sevk."
+    }
   },
   "B37.0": {
     "tani_adi": "Oral Kandidiazis",
     "tedavi": "Antifungal tedavi",
-    "ilaclar": [
-      {
-        "etken_madde": "Nistatin oral süspansiyon 100.000 IU/ml",
-        "kullanim": "4x1, 2-3 dakika çalkalayıp yut, 7-14 gün",
-        "not": "Yemekten sonra kullan. Protez varsa temizle",
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
-      },
-      {
-        "etken_madde": "Flukonazol 150 mg (dirençli vakalarda)",
-        "kullanim": "1x1, 7-14 gün",
-        "not": "Karaciğer yüklü hastalarda dikkat",
-        "ozel_gruplar": {"hamile":"kullanma","karaciger":"kullanma","bobrek":"doz_azalt","kan_sulandirici":"dikkat"}
-      }
-    ],
-    "klinik_not": "Predispozan faktörleri sorgula: antibiyotik, kortikosteroid, DM, immün yetmezlik, protez hijyeni."
+    "yetiskin": {
+      "ilaclar": [
+        {
+          "etken_madde": "Nistatin oral süspansiyon 100.000 IU/ml",
+          "kullanim": "4x1, 2-3 dakika çalkalayıp yut, 7-14 gün",
+          "max_gunluk_doz": "(max 4x500.000 IU/gün)",
+          "not": "Yemekten sonra kullan. Protez varsa temizle",
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
+        },
+        {
+          "etken_madde": "Flukonazol 150 mg (dirençli vakalarda)",
+          "kullanim": "1x1, 7-14 gün",
+          "max_gunluk_doz": "(max 400 mg/gün)",
+          "not": "Karaciğer yüklü hastalarda dikkat",
+          "ozel_gruplar": {"hamile":"kullanma","karaciger":"kullanma","bobrek":"doz_azalt","kan_sulandirici":"dikkat"}
+        }
+      ],
+      "klinik_not": "Predispozan faktörleri sorgula: antibiyotik, kortikosteroid, DM, immün yetmezlik, protez hijyeni."
+    },
+    "cocuk": {
+      "ilaclar": [
+        {
+          "etken_madde": "Nistatin oral süspansiyon",
+          "kullanim": "4x1, her beslenme sonrası — yutarak, 7-14 gün",
+          "max_gunluk_doz": "(Bebek: 4x100.000 IU | Çocuk: 4x250.000-500.000 IU)",
+          "not": "Anne meme başı da tedavi edilmeli (emzirme döneminde)"
+        }
+      ],
+      "klinik_not": "Bebeklerde pamukçuk sık. İmmün yetmezlik ekarte et. Emziren annede de tedavi şart."
+    }
   },
   "K07.6": {
     "tani_adi": "TME Bozukluğu",
     "tedavi": "Splint tedavisi, fizyoterapi, ilaç",
-    "ilaclar": [
-      {
-        "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
-        "ticari": ["Naproksen Sodyum (TME için ilk tercih)", "Deksketoprofen Trometamol", "İbuprofen"],
-        "kullanim": "Naproksen Na 550mg 2x1 / Deksketoprofen 25mg 3x1 veya 50mg 2x1  / İbuprofen 400mg 3x1 — yemekle, 7-10 gün",
-        "not": "Naproksen Na uzun etkisi nedeniyle TME'de tercih edilir",
-        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
-      },
-      {
-        "etken_madde": "Siklobenzaprin 5 mg (kas gevşetici)",
-        "kullanim": "Gece 1x1, 2 hafta",
-        "not": "Uyku getirebilir, araç kullanımına dikkat",
-        "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"guvenli","kan_sulandirici":"guvenli"}
-      },
-      {
-        "etken_madde": "Gargara — Seçenekli (ağız içi ağrıda)",
-        "ticari": ["Benzidamin", "Flurbiprofen", "Ketoprofen"],
-        "kullanim": "2x1, 7 gün",
-        "not": null,
-        "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
-      }
-    ],
-    "klinik_not": "Yumuşak diyet öner. Ağzı geniş açma, sert yemek yeme. Gece bruksizm varsa oklüzal splint."
+    "yetiskin": {
+      "ilaclar": [
+        {
+          "etken_madde": "Ağrı Kesici — Seçenekli (birini seç)",
+          "kullanim": "Naproksen Na 550mg 2x1 (TME'de ilk tercih) / Deksketoprofen 25mg 3x1 / İbuprofen 400mg 3x1 — yemekle, 7-10 gün",
+          "max_gunluk_doz": "(Naproksen Na max 1100mg/gün | Deksketoprofen max 75mg/gün | İbuprofen max 1200mg/gün)",
+          "not": "Naproksen Na uzun etkisi nedeniyle TME'de tercih edilir",
+          "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"kullanma","kan_sulandirici":"kullanma"}
+        },
+        {
+          "etken_madde": "Siklobenzaprin 5 mg (kas gevşetici)",
+          "kullanim": "Gece 1x1, 2 hafta",
+          "max_gunluk_doz": "(max 30 mg/gün)",
+          "not": "Uyku getirebilir, araç kullanımına dikkat",
+          "ozel_gruplar": {"hamile":"kullanma","karaciger":"dikkat","bobrek":"guvenli","kan_sulandirici":"guvenli"}
+        },
+        {
+          "etken_madde": "Gargara — Seçenekli (ağız içi ağrıda)",
+          "kullanim": "2x1, 7 gün",
+          "max_gunluk_doz": "(Benzidamin max 6 kez/gün)",
+          "not": "Tantum Verde / Majezik Gargara / Ketober Gargara",
+          "ozel_gruplar": {"hamile":"guvenli","karaciger":"guvenli","bobrek":"guvenli","kan_sulandirici":"guvenli"}
+        }
+      ],
+      "klinik_not": "Yumuşak diyet öner. Ağzı geniş açma, sert yemek yeme. Gece bruksizm varsa oklüzal splint."
+    },
+    "cocuk": {
+      "ilaclar": [
+        {
+          "etken_madde": "İbuprofen süspansiyon",
+          "mg_kg_doz": 10,
+          "doz_araligi": "6-8 saatte bir",
+          "sure": "7-10 gün",
+          "max_gunluk_doz": "(max 40 mg/kg/gün, 1200 mg'ı geçme)",
+          "not": null
+        },
+        {
+          "etken_madde": "Parasetamol süspansiyon (ibuprofen kullanamıyorsa)",
+          "mg_kg_doz": 15,
+          "doz_araligi": "4-6 saatte bir",
+          "sure": "Gerektiğinde",
+          "max_gunluk_doz": "(max 75 mg/kg/gün)",
+          "not": null
+        }
+      ],
+      "klinik_not": "Çocuklarda TME sorunları büyüme bozukluğu yapabilir. Ortodonti/pedodonti konsültasyonu öner."
+    }
   }
 }
